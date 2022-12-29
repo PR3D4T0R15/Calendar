@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CalendarEX.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,10 +58,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="img.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>img.resx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="img.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>img.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +93,72 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\styczen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\czerwiec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\grudzien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\kwiecien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\lipiec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\listopad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\luty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\maj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\marzec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\nadchodzace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\notatki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\pazdziernik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sierpien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\styczen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\wrzesien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\logo.ico" />
+    <Content Include="logo.ico" />
+    <Content Include="Resources\czerwiec.png" />
+    <Content Include="Resources\grudzien.png" />
+    <Content Include="Resources\kwiecien.png" />
+    <Content Include="Resources\lipiec.png" />
+    <Content Include="Resources\listopad.png" />
+    <Content Include="Resources\logo.png" />
+    <Content Include="Resources\luty.png" />
+    <Content Include="Resources\maj.png" />
+    <Content Include="Resources\marzec.png" />
+    <Content Include="Resources\nadchodzace.png" />
+    <Content Include="Resources\notatki.png" />
+    <Content Include="Resources\pazdziernik.png" />
+    <Content Include="Resources\sierpien.png" />
+    <Content Include="Resources\wrzesien.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
