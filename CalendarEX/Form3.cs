@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CalendarEX
 {
-    public partial class Form3 : Form
+    public partial class OknoNotatki : Form
     {
-        public Form3()
+        public OknoNotatki()
         {
             InitializeComponent();
         }
