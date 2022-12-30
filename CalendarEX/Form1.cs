@@ -56,5 +56,15 @@ namespace CalendarEX
         {
 
         }
+
+        private void PanelRoku_rokDoPrzodu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PanelRoku_rokDoTylu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

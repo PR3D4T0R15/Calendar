@@ -33,7 +33,6 @@
             this.PanelRoku = new System.Windows.Forms.TableLayoutPanel();
             this.PanelRoku_rok = new System.Windows.Forms.Label();
             this.PanelRoku_rokDoPrzodu = new System.Windows.Forms.Button();
-            this.PanelRoku_rokWstecz = new System.Windows.Forms.Button();
             this.PanelGlowny = new System.Windows.Forms.TableLayoutPanel();
             this.PanelGlowny_Daty = new System.Windows.Forms.TableLayoutPanel();
             this.Daty_Nadchodzace = new System.Windows.Forms.TableLayoutPanel();
@@ -67,6 +66,8 @@
             this.Czerwiec_tekst = new System.Windows.Forms.Label();
             this.Miesiace_Grudzien = new System.Windows.Forms.TableLayoutPanel();
             this.Grudzien_tekst = new System.Windows.Forms.Label();
+            this.PanelRoku_rokDoTylu = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.GlowneOkno_podzial)).BeginInit();
             this.GlowneOkno_podzial.Panel1.SuspendLayout();
             this.GlowneOkno_podzial.Panel2.SuspendLayout();
@@ -121,7 +122,7 @@
             this.PanelRoku.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.PanelRoku.Controls.Add(this.PanelRoku_rok, 1, 0);
             this.PanelRoku.Controls.Add(this.PanelRoku_rokDoPrzodu, 2, 0);
-            this.PanelRoku.Controls.Add(this.PanelRoku_rokWstecz, 0, 0);
+            this.PanelRoku.Controls.Add(this.PanelRoku_rokDoTylu, 0, 0);
             this.PanelRoku.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelRoku.Location = new System.Drawing.Point(0, 0);
             this.PanelRoku.Name = "PanelRoku";
@@ -155,19 +156,7 @@
             this.PanelRoku_rokDoPrzodu.TabIndex = 2;
             this.PanelRoku_rokDoPrzodu.Text = "NASTĘPNY";
             this.PanelRoku_rokDoPrzodu.UseVisualStyleBackColor = true;
-            // 
-            // PanelRoku_rokWstecz
-            // 
-            this.PanelRoku_rokWstecz.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelRoku_rokWstecz.Location = new System.Drawing.Point(4, 4);
-            this.PanelRoku_rokWstecz.Name = "PanelRoku_rokWstecz";
-            this.PanelRoku_rokWstecz.Size = new System.Drawing.Size(171, 44);
-            this.PanelRoku_rokWstecz.TabIndex = 1;
-            this.PanelRoku_rokWstecz.Text = "POPRZEDNI";
-            this.PanelRoku_rokWstecz.UseVisualStyleBackColor = true;
-            this.PanelRoku_rokWstecz.Click += new System.EventHandler(this.button1_Click);
+            this.PanelRoku_rokDoPrzodu.Click += new System.EventHandler(this.PanelRoku_rokDoPrzodu_Click);
             // 
             // PanelGlowny
             // 
@@ -317,6 +306,7 @@
             this.Miesiace_Styczen.ColumnCount = 1;
             this.Miesiace_Styczen.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.Miesiace_Styczen.Controls.Add(this.Styczen_tekst, 0, 0);
+            this.Miesiace_Styczen.Controls.Add(this.flowLayoutPanel1, 0, 1);
             this.Miesiace_Styczen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Miesiace_Styczen.Location = new System.Drawing.Point(3, 3);
             this.Miesiace_Styczen.Name = "Miesiace_Styczen";
@@ -624,6 +614,29 @@
             this.Grudzien_tekst.Text = "grudzień";
             this.Grudzien_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // PanelRoku_rokDoTylu
+            // 
+            this.PanelRoku_rokDoTylu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelRoku_rokDoTylu.Location = new System.Drawing.Point(4, 4);
+            this.PanelRoku_rokDoTylu.Name = "PanelRoku_rokDoTylu";
+            this.PanelRoku_rokDoTylu.Size = new System.Drawing.Size(171, 44);
+            this.PanelRoku_rokDoTylu.TabIndex = 3;
+            this.PanelRoku_rokDoTylu.Text = "button1";
+            this.PanelRoku_rokDoTylu.UseVisualStyleBackColor = true;
+            this.PanelRoku_rokDoTylu.Click += new System.EventHandler(this.PanelRoku_rokDoTylu_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 59);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(153, 304);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
             // GlowneOkno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -684,7 +697,6 @@
         private System.Windows.Forms.TableLayoutPanel PanelRoku;
         private System.Windows.Forms.Label PanelRoku_rok;
         private System.Windows.Forms.Button PanelRoku_rokDoPrzodu;
-        private System.Windows.Forms.Button PanelRoku_rokWstecz;
         private System.Windows.Forms.TableLayoutPanel PanelGlowny;
         private System.Windows.Forms.TableLayoutPanel PanelGlowny_Daty;
         private System.Windows.Forms.TableLayoutPanel PanelGlowny_Miesiace;
@@ -718,6 +730,8 @@
         private System.Windows.Forms.Label Listopad_tekst;
         private System.Windows.Forms.Label Czerwiec_tekst;
         private System.Windows.Forms.Label Grudzien_tekst;
+        private System.Windows.Forms.Button PanelRoku_rokDoTylu;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
