@@ -16,5 +16,30 @@ namespace CalendarEX
         {
             InitializeComponent();
         }
+
+        private void PodzialTytul_tekst_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OknoMiesiac_Load(object sender, EventArgs e)
+        {
+            string miesiacNazwa = "";
+
+            switch(GlowneOkno.miesiac)
+            {
+                case 0:
+                    miesiacNazwa = "ERROR";
+                    break;
+                case 1:
+                    miesiacNazwa = "Styczeń";
+                    break; 
+                case 2:
+                    miesiacNazwa = "Luty";
+                    break;
+            }
+
+            PodzialTytul_tekst.Text = miesiacNazwa;
+        }
     }
 }
