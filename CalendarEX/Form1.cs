@@ -77,8 +77,94 @@ namespace CalendarEX
 
             OknoMiesiac WidokMiesiac = new OknoMiesiac();
             WidokMiesiac.Show();
+        }
 
-            
+        private void Luty_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 2;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
+        }
+
+        private void Marzec_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 3;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
+        }
+
+        private void Kwiecien_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 4;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
+        }
+
+        private void Maj_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 5;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
+        }
+
+        private void Czerwiec_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 6;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
+        }
+
+        private void Lipiec_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 7;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
+        }
+
+        private void Sierpien_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 8;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
+        }
+
+        private void Wrzesien_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 9;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
+        }
+
+        private void Pazdziernik_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 10;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
+        }
+
+        private void Listopad_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 11;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
+        }
+
+        private void Grudzien_tekst_Click(object sender, EventArgs e)
+        {
+            miesiac = 12;
+
+            OknoMiesiac WidokMiesiac = new OknoMiesiac();
+            WidokMiesiac.Show();
         }
     }
 }

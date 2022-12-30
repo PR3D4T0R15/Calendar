@@ -200,10 +200,10 @@
             // PodzialTytul
             // 
             this.PodzialTytul.ColumnCount = 4;
-            this.PodzialTytul.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.PodzialTytul.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.PodzialTytul.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.PodzialTytul.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.PodzialTytul.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.PodzialTytul.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.PodzialTytul.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.PodzialTytul.Controls.Add(this.PodzialTytul_tekst, 1, 0);
             this.PodzialTytul.Controls.Add(this.PodzialTytul_obraz, 2, 0);
             this.PodzialTytul.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -218,7 +218,7 @@
             // 
             this.PodzialTytul_tekst.AutoSize = true;
             this.PodzialTytul_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PodzialTytul_tekst.Location = new System.Drawing.Point(400, 0);
+            this.PodzialTytul_tekst.Location = new System.Drawing.Point(457, 0);
             this.PodzialTytul_tekst.Name = "PodzialTytul_tekst";
             this.PodzialTytul_tekst.Size = new System.Drawing.Size(164, 44);
             this.PodzialTytul_tekst.TabIndex = 0;
@@ -231,9 +231,9 @@
             this.PodzialTytul_obraz.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PodzialTytul_obraz.Image = global::CalendarEX.img.styczen;
             this.PodzialTytul_obraz.InitialImage = global::CalendarEX.img.styczen;
-            this.PodzialTytul_obraz.Location = new System.Drawing.Point(570, 3);
+            this.PodzialTytul_obraz.Location = new System.Drawing.Point(627, 3);
             this.PodzialTytul_obraz.Name = "PodzialTytul_obraz";
-            this.PodzialTytul_obraz.Size = new System.Drawing.Size(164, 38);
+            this.PodzialTytul_obraz.Size = new System.Drawing.Size(50, 38);
             this.PodzialTytul_obraz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PodzialTytul_obraz.TabIndex = 1;
             this.PodzialTytul_obraz.TabStop = false;

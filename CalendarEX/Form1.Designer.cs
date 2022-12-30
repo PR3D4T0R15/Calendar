@@ -33,55 +33,55 @@
             this.PanelRoku = new System.Windows.Forms.TableLayoutPanel();
             this.PanelRoku_rok = new System.Windows.Forms.Label();
             this.PanelRoku_rokDoPrzodu = new System.Windows.Forms.Button();
+            this.PanelRoku_rokDoTylu = new System.Windows.Forms.Button();
             this.PanelGlowny = new System.Windows.Forms.TableLayoutPanel();
             this.PanelGlowny_Daty = new System.Windows.Forms.TableLayoutPanel();
             this.Daty_Nadchodzace = new System.Windows.Forms.TableLayoutPanel();
             this.Nadchodzace_tekst = new System.Windows.Forms.Label();
+            this.Nadchodzace_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Daty_Najwazniejsze = new System.Windows.Forms.TableLayoutPanel();
             this.Najwazniejsze_tekst = new System.Windows.Forms.Label();
+            this.Najwazniejsze_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Daty_Notatki = new System.Windows.Forms.TableLayoutPanel();
             this.Notatki_tekst = new System.Windows.Forms.Label();
+            this.Notatki_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.PanelGlowny_Miesiace = new System.Windows.Forms.TableLayoutPanel();
             this.Miesiace_Styczen = new System.Windows.Forms.TableLayoutPanel();
             this.Styczen_tekst = new System.Windows.Forms.Label();
+            this.Styczen_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Lipiec = new System.Windows.Forms.TableLayoutPanel();
             this.Lipiec_tekst = new System.Windows.Forms.Label();
+            this.Lipiec_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Luty = new System.Windows.Forms.TableLayoutPanel();
             this.Luty_tekst = new System.Windows.Forms.Label();
+            this.Luty_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Sierpien = new System.Windows.Forms.TableLayoutPanel();
             this.Sierpien_tekst = new System.Windows.Forms.Label();
+            this.Sierpien_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Marzec = new System.Windows.Forms.TableLayoutPanel();
             this.Marzec_tekst = new System.Windows.Forms.Label();
+            this.Marzec_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Wrzesien = new System.Windows.Forms.TableLayoutPanel();
             this.Wrzesien_tekst = new System.Windows.Forms.Label();
+            this.Wrzesien_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Kwiecien = new System.Windows.Forms.TableLayoutPanel();
             this.Kwiecien_tekst = new System.Windows.Forms.Label();
+            this.Kwiecien_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Pazdziernik = new System.Windows.Forms.TableLayoutPanel();
-            this.Pazdziernik_tekst = new System.Windows.Forms.Label();
+            this.Pazdziernik_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Maj = new System.Windows.Forms.TableLayoutPanel();
             this.Maj_tekst = new System.Windows.Forms.Label();
+            this.Maj_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Listopad = new System.Windows.Forms.TableLayoutPanel();
             this.Listopad_tekst = new System.Windows.Forms.Label();
+            this.Listopad_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Czerwiec = new System.Windows.Forms.TableLayoutPanel();
             this.Czerwiec_tekst = new System.Windows.Forms.Label();
+            this.Czerwiec_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Grudzien = new System.Windows.Forms.TableLayoutPanel();
             this.Grudzien_tekst = new System.Windows.Forms.Label();
-            this.PanelRoku_rokDoTylu = new System.Windows.Forms.Button();
-            this.Styczen_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Luty_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Marzec_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Kwiecien_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Maj_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Czerwiec_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Lipiec_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Grudzien_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Listopad_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Pazdziernik_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Wrzesien_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Sierpien_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Nadchodzace_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Najwazniejsze_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Notatki_lista = new System.Windows.Forms.FlowLayoutPanel();
+            this.Pazdziernik_tekst = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GlowneOkno_podzial)).BeginInit();
             this.GlowneOkno_podzial.Panel1.SuspendLayout();
             this.GlowneOkno_podzial.Panel2.SuspendLayout();
@@ -173,6 +173,17 @@
             this.PanelRoku_rokDoPrzodu.UseVisualStyleBackColor = true;
             this.PanelRoku_rokDoPrzodu.Click += new System.EventHandler(this.PanelRoku_rokDoPrzodu_Click);
             // 
+            // PanelRoku_rokDoTylu
+            // 
+            this.PanelRoku_rokDoTylu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelRoku_rokDoTylu.Location = new System.Drawing.Point(4, 4);
+            this.PanelRoku_rokDoTylu.Name = "PanelRoku_rokDoTylu";
+            this.PanelRoku_rokDoTylu.Size = new System.Drawing.Size(171, 44);
+            this.PanelRoku_rokDoTylu.TabIndex = 3;
+            this.PanelRoku_rokDoTylu.Text = "button1";
+            this.PanelRoku_rokDoTylu.UseVisualStyleBackColor = true;
+            this.PanelRoku_rokDoTylu.Click += new System.EventHandler(this.PanelRoku_rokDoTylu_Click);
+            // 
             // PanelGlowny
             // 
             this.PanelGlowny.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -234,6 +245,14 @@
             this.Nadchodzace_tekst.Text = "NADCHODZĄCE WYDARZENIA";
             this.Nadchodzace_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Nadchodzace_lista
+            // 
+            this.Nadchodzace_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Nadchodzace_lista.Location = new System.Drawing.Point(4, 42);
+            this.Nadchodzace_lista.Name = "Nadchodzace_lista";
+            this.Nadchodzace_lista.Size = new System.Drawing.Size(157, 209);
+            this.Nadchodzace_lista.TabIndex = 1;
+            // 
             // Daty_Najwazniejsze
             // 
             this.Daty_Najwazniejsze.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -261,6 +280,14 @@
             this.Najwazniejsze_tekst.Text = "NAJWAŻNIEJSZE DATY";
             this.Najwazniejsze_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Najwazniejsze_lista
+            // 
+            this.Najwazniejsze_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Najwazniejsze_lista.Location = new System.Drawing.Point(4, 42);
+            this.Najwazniejsze_lista.Name = "Najwazniejsze_lista";
+            this.Najwazniejsze_lista.Size = new System.Drawing.Size(157, 209);
+            this.Najwazniejsze_lista.TabIndex = 1;
+            // 
             // Daty_Notatki
             // 
             this.Daty_Notatki.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -287,6 +314,14 @@
             this.Notatki_tekst.TabIndex = 0;
             this.Notatki_tekst.Text = "NOTATKI";
             this.Notatki_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Notatki_lista
+            // 
+            this.Notatki_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Notatki_lista.Location = new System.Drawing.Point(4, 37);
+            this.Notatki_lista.Name = "Notatki_lista";
+            this.Notatki_lista.Size = new System.Drawing.Size(157, 177);
+            this.Notatki_lista.TabIndex = 1;
             // 
             // PanelGlowny_Miesiace
             // 
@@ -346,6 +381,14 @@
             this.Styczen_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Styczen_tekst.Click += new System.EventHandler(this.Styczen_tekst_Click);
             // 
+            // Styczen_lista
+            // 
+            this.Styczen_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Styczen_lista.Location = new System.Drawing.Point(4, 59);
+            this.Styczen_lista.Name = "Styczen_lista";
+            this.Styczen_lista.Size = new System.Drawing.Size(153, 304);
+            this.Styczen_lista.TabIndex = 1;
+            // 
             // Miesiace_Lipiec
             // 
             this.Miesiace_Lipiec.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -372,6 +415,15 @@
             this.Lipiec_tekst.TabIndex = 0;
             this.Lipiec_tekst.Text = "lipiec";
             this.Lipiec_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lipiec_tekst.Click += new System.EventHandler(this.Lipiec_tekst_Click);
+            // 
+            // Lipiec_lista
+            // 
+            this.Lipiec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Lipiec_lista.Location = new System.Drawing.Point(4, 59);
+            this.Lipiec_lista.Name = "Lipiec_lista";
+            this.Lipiec_lista.Size = new System.Drawing.Size(153, 304);
+            this.Lipiec_lista.TabIndex = 1;
             // 
             // Miesiace_Luty
             // 
@@ -399,6 +451,15 @@
             this.Luty_tekst.TabIndex = 0;
             this.Luty_tekst.Text = "luty";
             this.Luty_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Luty_tekst.Click += new System.EventHandler(this.Luty_tekst_Click);
+            // 
+            // Luty_lista
+            // 
+            this.Luty_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Luty_lista.Location = new System.Drawing.Point(4, 59);
+            this.Luty_lista.Name = "Luty_lista";
+            this.Luty_lista.Size = new System.Drawing.Size(153, 304);
+            this.Luty_lista.TabIndex = 1;
             // 
             // Miesiace_Sierpien
             // 
@@ -426,6 +487,15 @@
             this.Sierpien_tekst.TabIndex = 0;
             this.Sierpien_tekst.Text = "sierpień";
             this.Sierpien_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Sierpien_tekst.Click += new System.EventHandler(this.Sierpien_tekst_Click);
+            // 
+            // Sierpien_lista
+            // 
+            this.Sierpien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Sierpien_lista.Location = new System.Drawing.Point(4, 59);
+            this.Sierpien_lista.Name = "Sierpien_lista";
+            this.Sierpien_lista.Size = new System.Drawing.Size(153, 304);
+            this.Sierpien_lista.TabIndex = 1;
             // 
             // Miesiace_Marzec
             // 
@@ -453,6 +523,15 @@
             this.Marzec_tekst.TabIndex = 0;
             this.Marzec_tekst.Text = "marzec";
             this.Marzec_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Marzec_tekst.Click += new System.EventHandler(this.Marzec_tekst_Click);
+            // 
+            // Marzec_lista
+            // 
+            this.Marzec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Marzec_lista.Location = new System.Drawing.Point(4, 59);
+            this.Marzec_lista.Name = "Marzec_lista";
+            this.Marzec_lista.Size = new System.Drawing.Size(153, 304);
+            this.Marzec_lista.TabIndex = 1;
             // 
             // Miesiace_Wrzesien
             // 
@@ -480,6 +559,15 @@
             this.Wrzesien_tekst.TabIndex = 0;
             this.Wrzesien_tekst.Text = "wrzesień";
             this.Wrzesien_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Wrzesien_tekst.Click += new System.EventHandler(this.Wrzesien_tekst_Click);
+            // 
+            // Wrzesien_lista
+            // 
+            this.Wrzesien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Wrzesien_lista.Location = new System.Drawing.Point(4, 59);
+            this.Wrzesien_lista.Name = "Wrzesien_lista";
+            this.Wrzesien_lista.Size = new System.Drawing.Size(153, 304);
+            this.Wrzesien_lista.TabIndex = 1;
             // 
             // Miesiace_Kwiecien
             // 
@@ -507,14 +595,23 @@
             this.Kwiecien_tekst.TabIndex = 0;
             this.Kwiecien_tekst.Text = "kwiecień";
             this.Kwiecien_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Kwiecien_tekst.Click += new System.EventHandler(this.Kwiecien_tekst_Click);
+            // 
+            // Kwiecien_lista
+            // 
+            this.Kwiecien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Kwiecien_lista.Location = new System.Drawing.Point(4, 59);
+            this.Kwiecien_lista.Name = "Kwiecien_lista";
+            this.Kwiecien_lista.Size = new System.Drawing.Size(153, 304);
+            this.Kwiecien_lista.TabIndex = 1;
             // 
             // Miesiace_Pazdziernik
             // 
             this.Miesiace_Pazdziernik.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.Miesiace_Pazdziernik.ColumnCount = 1;
             this.Miesiace_Pazdziernik.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.Miesiace_Pazdziernik.Controls.Add(this.Pazdziernik_tekst, 0, 0);
             this.Miesiace_Pazdziernik.Controls.Add(this.Pazdziernik_lista, 0, 1);
+            this.Miesiace_Pazdziernik.Controls.Add(this.Pazdziernik_tekst, 0, 0);
             this.Miesiace_Pazdziernik.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Miesiace_Pazdziernik.Location = new System.Drawing.Point(504, 376);
             this.Miesiace_Pazdziernik.Name = "Miesiace_Pazdziernik";
@@ -524,17 +621,13 @@
             this.Miesiace_Pazdziernik.Size = new System.Drawing.Size(161, 367);
             this.Miesiace_Pazdziernik.TabIndex = 7;
             // 
-            // Pazdziernik_tekst
+            // Pazdziernik_lista
             // 
-            this.Pazdziernik_tekst.AutoSize = true;
-            this.Pazdziernik_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pazdziernik_tekst.Location = new System.Drawing.Point(4, 1);
-            this.Pazdziernik_tekst.Name = "Pazdziernik_tekst";
-            this.Pazdziernik_tekst.Size = new System.Drawing.Size(153, 54);
-            this.Pazdziernik_tekst.TabIndex = 0;
-            this.Pazdziernik_tekst.Text = "październik";
-            this.Pazdziernik_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Pazdziernik_tekst.Click += new System.EventHandler(this.label13_Click);
+            this.Pazdziernik_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pazdziernik_lista.Location = new System.Drawing.Point(4, 59);
+            this.Pazdziernik_lista.Name = "Pazdziernik_lista";
+            this.Pazdziernik_lista.Size = new System.Drawing.Size(153, 304);
+            this.Pazdziernik_lista.TabIndex = 1;
             // 
             // Miesiace_Maj
             // 
@@ -562,6 +655,15 @@
             this.Maj_tekst.TabIndex = 0;
             this.Maj_tekst.Text = "maj";
             this.Maj_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Maj_tekst.Click += new System.EventHandler(this.Maj_tekst_Click);
+            // 
+            // Maj_lista
+            // 
+            this.Maj_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Maj_lista.Location = new System.Drawing.Point(4, 59);
+            this.Maj_lista.Name = "Maj_lista";
+            this.Maj_lista.Size = new System.Drawing.Size(153, 304);
+            this.Maj_lista.TabIndex = 1;
             // 
             // Miesiace_Listopad
             // 
@@ -589,6 +691,15 @@
             this.Listopad_tekst.TabIndex = 0;
             this.Listopad_tekst.Text = "listopad";
             this.Listopad_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Listopad_tekst.Click += new System.EventHandler(this.Listopad_tekst_Click);
+            // 
+            // Listopad_lista
+            // 
+            this.Listopad_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Listopad_lista.Location = new System.Drawing.Point(4, 59);
+            this.Listopad_lista.Name = "Listopad_lista";
+            this.Listopad_lista.Size = new System.Drawing.Size(153, 304);
+            this.Listopad_lista.TabIndex = 1;
             // 
             // Miesiace_Czerwiec
             // 
@@ -616,6 +727,15 @@
             this.Czerwiec_tekst.TabIndex = 0;
             this.Czerwiec_tekst.Text = "czerwiec";
             this.Czerwiec_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Czerwiec_tekst.Click += new System.EventHandler(this.Czerwiec_tekst_Click);
+            // 
+            // Czerwiec_lista
+            // 
+            this.Czerwiec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Czerwiec_lista.Location = new System.Drawing.Point(4, 59);
+            this.Czerwiec_lista.Name = "Czerwiec_lista";
+            this.Czerwiec_lista.Size = new System.Drawing.Size(154, 304);
+            this.Czerwiec_lista.TabIndex = 1;
             // 
             // Miesiace_Grudzien
             // 
@@ -643,73 +763,7 @@
             this.Grudzien_tekst.TabIndex = 0;
             this.Grudzien_tekst.Text = "grudzień";
             this.Grudzien_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PanelRoku_rokDoTylu
-            // 
-            this.PanelRoku_rokDoTylu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelRoku_rokDoTylu.Location = new System.Drawing.Point(4, 4);
-            this.PanelRoku_rokDoTylu.Name = "PanelRoku_rokDoTylu";
-            this.PanelRoku_rokDoTylu.Size = new System.Drawing.Size(171, 44);
-            this.PanelRoku_rokDoTylu.TabIndex = 3;
-            this.PanelRoku_rokDoTylu.Text = "button1";
-            this.PanelRoku_rokDoTylu.UseVisualStyleBackColor = true;
-            this.PanelRoku_rokDoTylu.Click += new System.EventHandler(this.PanelRoku_rokDoTylu_Click);
-            // 
-            // Styczen_lista
-            // 
-            this.Styczen_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Styczen_lista.Location = new System.Drawing.Point(4, 59);
-            this.Styczen_lista.Name = "Styczen_lista";
-            this.Styczen_lista.Size = new System.Drawing.Size(153, 304);
-            this.Styczen_lista.TabIndex = 1;
-            // 
-            // Luty_lista
-            // 
-            this.Luty_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Luty_lista.Location = new System.Drawing.Point(4, 59);
-            this.Luty_lista.Name = "Luty_lista";
-            this.Luty_lista.Size = new System.Drawing.Size(153, 304);
-            this.Luty_lista.TabIndex = 1;
-            // 
-            // Marzec_lista
-            // 
-            this.Marzec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Marzec_lista.Location = new System.Drawing.Point(4, 59);
-            this.Marzec_lista.Name = "Marzec_lista";
-            this.Marzec_lista.Size = new System.Drawing.Size(153, 304);
-            this.Marzec_lista.TabIndex = 1;
-            // 
-            // Kwiecien_lista
-            // 
-            this.Kwiecien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Kwiecien_lista.Location = new System.Drawing.Point(4, 59);
-            this.Kwiecien_lista.Name = "Kwiecien_lista";
-            this.Kwiecien_lista.Size = new System.Drawing.Size(153, 304);
-            this.Kwiecien_lista.TabIndex = 1;
-            // 
-            // Maj_lista
-            // 
-            this.Maj_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Maj_lista.Location = new System.Drawing.Point(4, 59);
-            this.Maj_lista.Name = "Maj_lista";
-            this.Maj_lista.Size = new System.Drawing.Size(153, 304);
-            this.Maj_lista.TabIndex = 1;
-            // 
-            // Czerwiec_lista
-            // 
-            this.Czerwiec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Czerwiec_lista.Location = new System.Drawing.Point(4, 59);
-            this.Czerwiec_lista.Name = "Czerwiec_lista";
-            this.Czerwiec_lista.Size = new System.Drawing.Size(154, 304);
-            this.Czerwiec_lista.TabIndex = 1;
-            // 
-            // Lipiec_lista
-            // 
-            this.Lipiec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Lipiec_lista.Location = new System.Drawing.Point(4, 59);
-            this.Lipiec_lista.Name = "Lipiec_lista";
-            this.Lipiec_lista.Size = new System.Drawing.Size(153, 304);
-            this.Lipiec_lista.TabIndex = 1;
+            this.Grudzien_tekst.Click += new System.EventHandler(this.Grudzien_tekst_Click);
             // 
             // Grudzien_lista
             // 
@@ -719,61 +773,17 @@
             this.Grudzien_lista.Size = new System.Drawing.Size(154, 304);
             this.Grudzien_lista.TabIndex = 1;
             // 
-            // Listopad_lista
+            // Pazdziernik_tekst
             // 
-            this.Listopad_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Listopad_lista.Location = new System.Drawing.Point(4, 59);
-            this.Listopad_lista.Name = "Listopad_lista";
-            this.Listopad_lista.Size = new System.Drawing.Size(153, 304);
-            this.Listopad_lista.TabIndex = 1;
-            // 
-            // Pazdziernik_lista
-            // 
-            this.Pazdziernik_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pazdziernik_lista.Location = new System.Drawing.Point(4, 59);
-            this.Pazdziernik_lista.Name = "Pazdziernik_lista";
-            this.Pazdziernik_lista.Size = new System.Drawing.Size(153, 304);
-            this.Pazdziernik_lista.TabIndex = 1;
-            // 
-            // Wrzesien_lista
-            // 
-            this.Wrzesien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Wrzesien_lista.Location = new System.Drawing.Point(4, 59);
-            this.Wrzesien_lista.Name = "Wrzesien_lista";
-            this.Wrzesien_lista.Size = new System.Drawing.Size(153, 304);
-            this.Wrzesien_lista.TabIndex = 1;
-            // 
-            // Sierpien_lista
-            // 
-            this.Sierpien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Sierpien_lista.Location = new System.Drawing.Point(4, 59);
-            this.Sierpien_lista.Name = "Sierpien_lista";
-            this.Sierpien_lista.Size = new System.Drawing.Size(153, 304);
-            this.Sierpien_lista.TabIndex = 1;
-            // 
-            // Nadchodzace_lista
-            // 
-            this.Nadchodzace_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Nadchodzace_lista.Location = new System.Drawing.Point(4, 42);
-            this.Nadchodzace_lista.Name = "Nadchodzace_lista";
-            this.Nadchodzace_lista.Size = new System.Drawing.Size(157, 209);
-            this.Nadchodzace_lista.TabIndex = 1;
-            // 
-            // Najwazniejsze_lista
-            // 
-            this.Najwazniejsze_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Najwazniejsze_lista.Location = new System.Drawing.Point(4, 42);
-            this.Najwazniejsze_lista.Name = "Najwazniejsze_lista";
-            this.Najwazniejsze_lista.Size = new System.Drawing.Size(157, 209);
-            this.Najwazniejsze_lista.TabIndex = 1;
-            // 
-            // Notatki_lista
-            // 
-            this.Notatki_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Notatki_lista.Location = new System.Drawing.Point(4, 37);
-            this.Notatki_lista.Name = "Notatki_lista";
-            this.Notatki_lista.Size = new System.Drawing.Size(157, 177);
-            this.Notatki_lista.TabIndex = 1;
+            this.Pazdziernik_tekst.AutoSize = true;
+            this.Pazdziernik_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pazdziernik_tekst.Location = new System.Drawing.Point(4, 1);
+            this.Pazdziernik_tekst.Name = "Pazdziernik_tekst";
+            this.Pazdziernik_tekst.Size = new System.Drawing.Size(153, 54);
+            this.Pazdziernik_tekst.TabIndex = 2;
+            this.Pazdziernik_tekst.Text = "październik";
+            this.Pazdziernik_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Pazdziernik_tekst.Click += new System.EventHandler(this.Pazdziernik_tekst_Click);
             // 
             // GlowneOkno
             // 
@@ -863,7 +873,6 @@
         private System.Windows.Forms.Label Marzec_tekst;
         private System.Windows.Forms.Label Wrzesien_tekst;
         private System.Windows.Forms.Label Kwiecien_tekst;
-        private System.Windows.Forms.Label Pazdziernik_tekst;
         private System.Windows.Forms.Label Maj_tekst;
         private System.Windows.Forms.Label Listopad_tekst;
         private System.Windows.Forms.Label Czerwiec_tekst;
@@ -884,6 +893,7 @@
         private System.Windows.Forms.FlowLayoutPanel Listopad_lista;
         private System.Windows.Forms.FlowLayoutPanel Czerwiec_lista;
         private System.Windows.Forms.FlowLayoutPanel Grudzien_lista;
+        private System.Windows.Forms.Label Pazdziernik_tekst;
     }
 }
 
