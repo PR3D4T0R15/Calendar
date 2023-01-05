@@ -81,8 +81,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>img.resx</DependentUpon>
     </Compile>
+    <Compile Include="PelnyDzien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PelnyDzien.Designer.cs">
+      <DependentUpon>PelnyDzien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PustyDzien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PustyDzien.Designer.cs">
+      <DependentUpon>PustyDzien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +111,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>img.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="PelnyDzien.resx">
+      <DependentUpon>PelnyDzien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -108,6 +123,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PustyDzien.resx">
+      <DependentUpon>PustyDzien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -102,6 +102,7 @@ namespace CalendarEX
             // pierwszy dzien wybranego miesiaca - jaki to jest dzien
             string pierwszyDzienTygodniaMiesiac = aktualnyMiesiac.DayOfWeek.ToString();
 
+            //jaki to dzien tygodnia
             int numerPierwszyDzienMiesiac = 0;
 
             if(pierwszyDzienTygodniaMiesiac == "Monday")
@@ -132,6 +133,22 @@ namespace CalendarEX
             {
                 numerPierwszyDzienMiesiac = 6;
             }
+
+            //wypelnienie pustych dni na początku kalendarza
+            for(int i = 0; i < numerPierwszyDzienMiesiac; i++)
+            {
+                PustyDzien pustaKontrolkaDni = new PustyDzien();
+                PodzialTygodni_kontrolkiDni.Controls.Add(pustaKontrolkaDni);
+            }
+
+            //wypelnienie dni danego miesiaca
+            for(int i = 1; i <= liczbaDniMiesiac; i++)
+            {
+                PelnyDzien kontrolkaDni = new PelnyDzien();
+                PodzialTygodni_kontrolkiDni.Controls.Add(kontrolkaDni);
+                kontrolkaDni.UstawNumerDnia(i);
+            }
+
         }
     }
 }
