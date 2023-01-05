@@ -12,6 +12,11 @@ namespace CalendarEX
 {
     public partial class OknoMiesiac : Form
     {
+        enum dniTygodnia
+        {
+            niedziela = 0, poniedzialek = 1, wtorek = 2, sroda = 3 , czwartek = 4, piatek = 5, sobota = 6
+        }
+
         public OknoMiesiac()
         {
             InitializeComponent();
@@ -82,6 +87,51 @@ namespace CalendarEX
             }
 
             PodzialTytul_tekst.Text = miesiacNazwa;
+
+            WyswietlKalendarz();
+        }
+
+        private void WyswietlKalendarz()
+        {
+            // pierwszy dzien wybranego miesiaca
+            DateTime aktualnyMiesiac = new DateTime(GlowneOkno.rok, GlowneOkno.miesiac, 1);
+
+            // liczba dni w miesiacu
+            int liczbaDniMiesiac = DateTime.DaysInMonth(GlowneOkno.rok, GlowneOkno.miesiac);
+
+            // pierwszy dzien wybranego miesiaca - jaki to jest dzien
+            string pierwszyDzienTygodniaMiesiac = aktualnyMiesiac.DayOfWeek.ToString();
+
+            int numerPierwszyDzienMiesiac = 0;
+
+            if(pierwszyDzienTygodniaMiesiac == "Monday")
+            {
+                numerPierwszyDzienMiesiac = 0;
+            }
+            else if (pierwszyDzienTygodniaMiesiac == "Tuesday")
+            {
+                numerPierwszyDzienMiesiac = 1;
+            }
+            else if (pierwszyDzienTygodniaMiesiac == "Wednesday")
+            {
+                numerPierwszyDzienMiesiac = 2;
+            }
+            else if (pierwszyDzienTygodniaMiesiac == "Thursday")
+            {
+                numerPierwszyDzienMiesiac = 3;
+            }
+            else if (pierwszyDzienTygodniaMiesiac == "Friday")
+            {
+                numerPierwszyDzienMiesiac = 4;
+            }
+            else if (pierwszyDzienTygodniaMiesiac == "Saturday")
+            {
+                numerPierwszyDzienMiesiac = 5;
+            }
+            else if (pierwszyDzienTygodniaMiesiac == "Sunday")
+            {
+                numerPierwszyDzienMiesiac = 6;
+            }
         }
     }
 }
