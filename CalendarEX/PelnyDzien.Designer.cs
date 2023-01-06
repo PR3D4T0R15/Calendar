@@ -30,6 +30,7 @@
         {
             this.ukladGlowny = new System.Windows.Forms.TableLayoutPanel();
             this.NumerDnia = new System.Windows.Forms.Label();
+            this.ZadaniaDnia = new System.Windows.Forms.FlowLayoutPanel();
             this.ukladGlowny.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -38,6 +39,7 @@
             this.ukladGlowny.ColumnCount = 1;
             this.ukladGlowny.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.ukladGlowny.Controls.Add(this.NumerDnia, 0, 0);
+            this.ukladGlowny.Controls.Add(this.ZadaniaDnia, 0, 1);
             this.ukladGlowny.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ukladGlowny.Location = new System.Drawing.Point(0, 0);
             this.ukladGlowny.Margin = new System.Windows.Forms.Padding(0);
@@ -59,6 +61,17 @@
             this.NumerDnia.TabIndex = 0;
             this.NumerDnia.Text = "label1";
             this.NumerDnia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NumerDnia.Click += new System.EventHandler(this.NumerDnia_Click);
+            // 
+            // ZadaniaDnia
+            // 
+            this.ZadaniaDnia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ZadaniaDnia.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.ZadaniaDnia.Location = new System.Drawing.Point(0, 36);
+            this.ZadaniaDnia.Margin = new System.Windows.Forms.Padding(0);
+            this.ZadaniaDnia.Name = "ZadaniaDnia";
+            this.ZadaniaDnia.Size = new System.Drawing.Size(159, 70);
+            this.ZadaniaDnia.TabIndex = 1;
             // 
             // PelnyDzien
             // 
@@ -80,5 +93,6 @@
 
         private System.Windows.Forms.TableLayoutPanel ukladGlowny;
         private System.Windows.Forms.Label NumerDnia;
+        private System.Windows.Forms.FlowLayoutPanel ZadaniaDnia;
     }
 }
