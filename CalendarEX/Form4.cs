@@ -16,5 +16,17 @@ namespace CalendarEX
         {
             InitializeComponent();
         }
+
+        private void Zapisz_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void UstawDomyslnaDate(int dzien, int miesiac, int rok)
+        {
+            Data_dzien.Text = dzien.ToString();
+            Data_rok.Text = rok.ToString();
+            Data_miesiac.SelectedIndex = miesiac - 1;
+        }
     }
 }

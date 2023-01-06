@@ -60,13 +60,13 @@
             this.ukladGlowny.Margin = new System.Windows.Forms.Padding(0);
             this.ukladGlowny.Name = "ukladGlowny";
             this.ukladGlowny.RowCount = 6;
-            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.ukladGlowny.Size = new System.Drawing.Size(460, 312);
+            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.95349F));
+            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.09302F));
+            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.95349F));
+            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.95349F));
+            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.09302F));
+            this.ukladGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.95349F));
+            this.ukladGlowny.Size = new System.Drawing.Size(353, 219);
             this.ukladGlowny.TabIndex = 0;
             // 
             // ukladPrzyciskow
@@ -76,29 +76,30 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ukladPrzyciskow.Controls.Add(this.Zapisz);
             this.ukladPrzyciskow.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.ukladPrzyciskow.Location = new System.Drawing.Point(0, 279);
+            this.ukladPrzyciskow.Location = new System.Drawing.Point(0, 186);
             this.ukladPrzyciskow.Margin = new System.Windows.Forms.Padding(0);
             this.ukladPrzyciskow.Name = "ukladPrzyciskow";
-            this.ukladPrzyciskow.Size = new System.Drawing.Size(460, 33);
+            this.ukladPrzyciskow.Size = new System.Drawing.Size(353, 33);
             this.ukladPrzyciskow.TabIndex = 0;
             // 
             // Zapisz
             // 
-            this.Zapisz.Location = new System.Drawing.Point(382, 3);
+            this.Zapisz.Location = new System.Drawing.Point(275, 3);
             this.Zapisz.Name = "Zapisz";
             this.Zapisz.Size = new System.Drawing.Size(75, 23);
             this.Zapisz.TabIndex = 0;
             this.Zapisz.Text = "ZAPISZ";
             this.Zapisz.UseVisualStyleBackColor = true;
+            this.Zapisz.Click += new System.EventHandler(this.Zapisz_Click);
             // 
             // NazwaWydarzenia_tytul
             // 
             this.NazwaWydarzenia_tytul.AutoSize = true;
             this.NazwaWydarzenia_tytul.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NazwaWydarzenia_tytul.Location = new System.Drawing.Point(0, 155);
-            this.NazwaWydarzenia_tytul.Margin = new System.Windows.Forms.Padding(0);
+            this.NazwaWydarzenia_tytul.Location = new System.Drawing.Point(9, 108);
+            this.NazwaWydarzenia_tytul.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.NazwaWydarzenia_tytul.Name = "NazwaWydarzenia_tytul";
-            this.NazwaWydarzenia_tytul.Size = new System.Drawing.Size(460, 31);
+            this.NazwaWydarzenia_tytul.Size = new System.Drawing.Size(335, 30);
             this.NazwaWydarzenia_tytul.TabIndex = 1;
             this.NazwaWydarzenia_tytul.Text = "Nazwa wydarzenia";
             this.NazwaWydarzenia_tytul.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -107,10 +108,10 @@
             // 
             this.Data_tytul.AutoSize = true;
             this.Data_tytul.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Data_tytul.Location = new System.Drawing.Point(0, 0);
-            this.Data_tytul.Margin = new System.Windows.Forms.Padding(0);
+            this.Data_tytul.Location = new System.Drawing.Point(9, 0);
+            this.Data_tytul.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.Data_tytul.Name = "Data_tytul";
-            this.Data_tytul.Size = new System.Drawing.Size(460, 31);
+            this.Data_tytul.Size = new System.Drawing.Size(335, 30);
             this.Data_tytul.TabIndex = 2;
             this.Data_tytul.Text = "Data";
             this.Data_tytul.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -118,10 +119,10 @@
             // NazwaWydarzenia
             // 
             this.NazwaWydarzenia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NazwaWydarzenia.Location = new System.Drawing.Point(9, 189);
+            this.NazwaWydarzenia.Location = new System.Drawing.Point(9, 141);
             this.NazwaWydarzenia.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
             this.NazwaWydarzenia.Name = "NazwaWydarzenia";
-            this.NazwaWydarzenia.Size = new System.Drawing.Size(442, 20);
+            this.NazwaWydarzenia.Size = new System.Drawing.Size(335, 20);
             this.NazwaWydarzenia.TabIndex = 3;
             // 
             // data_panel
@@ -130,10 +131,10 @@
             this.data_panel.Controls.Add(this.Data_miesiac);
             this.data_panel.Controls.Add(this.Data_rok);
             this.data_panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.data_panel.Location = new System.Drawing.Point(9, 34);
+            this.data_panel.Location = new System.Drawing.Point(9, 33);
             this.data_panel.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
             this.data_panel.Name = "data_panel";
-            this.data_panel.Size = new System.Drawing.Size(442, 87);
+            this.data_panel.Size = new System.Drawing.Size(335, 42);
             this.data_panel.TabIndex = 4;
             // 
             // Data_dzien
@@ -177,9 +178,10 @@
             // 
             this.CzyWazneWydarzenie.AutoSize = true;
             this.CzyWazneWydarzenie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CzyWazneWydarzenie.Location = new System.Drawing.Point(3, 127);
+            this.CzyWazneWydarzenie.Location = new System.Drawing.Point(9, 81);
+            this.CzyWazneWydarzenie.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
             this.CzyWazneWydarzenie.Name = "CzyWazneWydarzenie";
-            this.CzyWazneWydarzenie.Size = new System.Drawing.Size(454, 25);
+            this.CzyWazneWydarzenie.Size = new System.Drawing.Size(335, 24);
             this.CzyWazneWydarzenie.TabIndex = 5;
             this.CzyWazneWydarzenie.Text = "Ważne wydarzenie";
             this.CzyWazneWydarzenie.UseVisualStyleBackColor = true;
@@ -188,7 +190,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 312);
+            this.ClientSize = new System.Drawing.Size(353, 219);
             this.Controls.Add(this.ukladGlowny);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoNoweWydarzenie";
