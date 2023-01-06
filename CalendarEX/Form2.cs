@@ -12,11 +12,6 @@ namespace CalendarEX
 {
     public partial class OknoMiesiac : Form
     {
-        enum dniTygodnia
-        {
-            niedziela = 0, poniedzialek = 1, wtorek = 2, sroda = 3 , czwartek = 4, piatek = 5, sobota = 6
-        }
-
         public OknoMiesiac()
         {
             InitializeComponent();

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace CalendarEX
 {
@@ -19,7 +20,7 @@ namespace CalendarEX
 
         private void Zapisz_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         public void UstawDomyslnaDate(int dzien, int miesiac, int rok)
