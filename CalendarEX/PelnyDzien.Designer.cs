@@ -61,6 +61,7 @@
             this.NumerDnia.TabIndex = 0;
             this.NumerDnia.Text = "label1";
             this.NumerDnia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NumerDnia.Click += new System.EventHandler(this.NumerDnia_Click);
             // 
             // ZadaniaDnia
             // 

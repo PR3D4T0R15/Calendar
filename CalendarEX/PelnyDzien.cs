@@ -21,5 +21,11 @@ namespace CalendarEX
         {
             NumerDnia.Text = numer.ToString();
         }
+
+        private void NumerDnia_Click(object sender, EventArgs e)
+        {
+            OknoNoweWydarzenie oknoWydarzenie = new OknoNoweWydarzenie();
+            oknoWydarzenie.Show();
+        }
     }
 }
