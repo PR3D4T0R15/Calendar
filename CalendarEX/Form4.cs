@@ -36,7 +36,7 @@ namespace CalendarEX
             //pobrane dane do zapytania
             string nazwa = NazwaWydarzenia.Text;
             string dzien = Data_dzien.Text;
-            string miesiac = Data_miesiac.Text;
+            string miesiac = Convert.ToString(Data_miesiac.SelectedIndex + 1);
             string rok = Data_rok.Text;
             string czyWazne = "0";
             if (CzyWazneWydarzenie.Checked == true)
