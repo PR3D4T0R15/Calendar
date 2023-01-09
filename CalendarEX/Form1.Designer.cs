@@ -69,6 +69,7 @@
             this.Kwiecien_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Miesiace_Pazdziernik = new System.Windows.Forms.TableLayoutPanel();
             this.Pazdziernik_lista = new System.Windows.Forms.FlowLayoutPanel();
+            this.Pazdziernik_tekst = new System.Windows.Forms.Label();
             this.Miesiace_Maj = new System.Windows.Forms.TableLayoutPanel();
             this.Maj_tekst = new System.Windows.Forms.Label();
             this.Maj_lista = new System.Windows.Forms.FlowLayoutPanel();
@@ -81,7 +82,6 @@
             this.Miesiace_Grudzien = new System.Windows.Forms.TableLayoutPanel();
             this.Grudzien_tekst = new System.Windows.Forms.Label();
             this.Grudzien_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Pazdziernik_tekst = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.GlowneOkno_podzial)).BeginInit();
             this.GlowneOkno_podzial.Panel1.SuspendLayout();
             this.GlowneOkno_podzial.Panel2.SuspendLayout();
@@ -180,7 +180,7 @@
             this.PanelRoku_rokDoTylu.Name = "PanelRoku_rokDoTylu";
             this.PanelRoku_rokDoTylu.Size = new System.Drawing.Size(171, 44);
             this.PanelRoku_rokDoTylu.TabIndex = 3;
-            this.PanelRoku_rokDoTylu.Text = "button1";
+            this.PanelRoku_rokDoTylu.Text = "POPRZEDNI";
             this.PanelRoku_rokDoTylu.UseVisualStyleBackColor = true;
             this.PanelRoku_rokDoTylu.Click += new System.EventHandler(this.PanelRoku_rokDoTylu_Click);
             // 
@@ -629,6 +629,18 @@
             this.Pazdziernik_lista.Size = new System.Drawing.Size(153, 304);
             this.Pazdziernik_lista.TabIndex = 1;
             // 
+            // Pazdziernik_tekst
+            // 
+            this.Pazdziernik_tekst.AutoSize = true;
+            this.Pazdziernik_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pazdziernik_tekst.Location = new System.Drawing.Point(4, 1);
+            this.Pazdziernik_tekst.Name = "Pazdziernik_tekst";
+            this.Pazdziernik_tekst.Size = new System.Drawing.Size(153, 54);
+            this.Pazdziernik_tekst.TabIndex = 2;
+            this.Pazdziernik_tekst.Text = "październik";
+            this.Pazdziernik_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Pazdziernik_tekst.Click += new System.EventHandler(this.Pazdziernik_tekst_Click);
+            // 
             // Miesiace_Maj
             // 
             this.Miesiace_Maj.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
@@ -772,18 +784,6 @@
             this.Grudzien_lista.Name = "Grudzien_lista";
             this.Grudzien_lista.Size = new System.Drawing.Size(154, 304);
             this.Grudzien_lista.TabIndex = 1;
-            // 
-            // Pazdziernik_tekst
-            // 
-            this.Pazdziernik_tekst.AutoSize = true;
-            this.Pazdziernik_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Pazdziernik_tekst.Location = new System.Drawing.Point(4, 1);
-            this.Pazdziernik_tekst.Name = "Pazdziernik_tekst";
-            this.Pazdziernik_tekst.Size = new System.Drawing.Size(153, 54);
-            this.Pazdziernik_tekst.TabIndex = 2;
-            this.Pazdziernik_tekst.Text = "październik";
-            this.Pazdziernik_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Pazdziernik_tekst.Click += new System.EventHandler(this.Pazdziernik_tekst_Click);
             // 
             // GlowneOkno
             // 
