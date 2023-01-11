@@ -339,7 +339,7 @@ namespace CalendarEX
                 //utworzenie napisu z wydarzeniem
                 WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
-                wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
+                wydarzenie.UstawTekst(dzien.ToString() + "." + miesiac.ToString() + " : " + nazwa);
                 wydarzenie.Name = "wydarzenie_" + nazwa;
                 wydarzenie.Width = Najwazniejsze_lista.Width - 6;
 

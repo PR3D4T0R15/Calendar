@@ -54,7 +54,7 @@
             this.WpisWydarzenia_tekst.Name = "WpisWydarzenia_tekst";
             this.WpisWydarzenia_tekst.Size = new System.Drawing.Size(142, 17);
             this.WpisWydarzenia_tekst.TabIndex = 0;
-            this.WpisWydarzenia_tekst.Text = "label1";
+            this.WpisWydarzenia_tekst.Text = "TEKST WYDARZENIA";
             this.WpisWydarzenia_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // WpisWydarzenia
