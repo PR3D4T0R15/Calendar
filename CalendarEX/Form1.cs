@@ -42,6 +42,9 @@ namespace CalendarEX
             WyczyscListyWydarzenNadchodzace();
             WczytajWydarzeniaNadchodzace();
 
+            WyczyscListyWydarzenWazne();
+            WczytajWydarzeniaWazne();
+
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -64,6 +67,9 @@ namespace CalendarEX
 
             WyczyscListyWydarzenNadchodzace();
             WczytajWydarzeniaNadchodzace();
+
+            WyczyscListyWydarzenWazne();
+            WczytajWydarzeniaWazne();
         }
 
         private void PanelRoku_rokDoTylu_Click(object sender, EventArgs e)
@@ -76,6 +82,9 @@ namespace CalendarEX
 
             WyczyscListyWydarzenNadchodzace();
             WczytajWydarzeniaNadchodzace();
+
+            WyczyscListyWydarzenWazne();
+            WczytajWydarzeniaWazne();
         }
 
         private void PanelRoku_rok_Click(object sender, EventArgs e)
@@ -305,23 +314,39 @@ namespace CalendarEX
                  int dzien = wynik.GetInt16(0);
                  string nazwa = wynik.GetString(1);
 
-                 DodajWydarzenieDoListy(dzien, nazwa);
+                 DodajWydarzenieDoListy(dzien, 0, nazwa, 0);
                 }
             
             sqlitePolaczenie.Close();
         }
 
-        private void DodajWydarzenieDoListy(int dzien, string nazwa)
+        private void DodajWydarzenieDoListy(int dzien, int miesiac, string nazwa, int czyWazne)
         {
-            //utworzenie napisu z wydarzeniem
-            Label wydarzenie = new Label();
+            if (czyWazne == 0)
+            {
+                //utworzenie napisu z wydarzeniem
+                Label wydarzenie = new Label();
 
-            wydarzenie.Text = dzien.ToString() + ": " + nazwa;
-            wydarzenie.Name = "wydarzenie_" + nazwa;
-            wydarzenie.AutoSize = true;
-            wydarzenie.Visible = true;
+                wydarzenie.Text = dzien.ToString() + ": " + nazwa;
+                wydarzenie.Name = "wydarzenie_" + nazwa;
+                wydarzenie.AutoSize = true;
+                wydarzenie.Visible = true;
 
-            Nadchodzace_lista.Controls.Add(wydarzenie);
+                Nadchodzace_lista.Controls.Add(wydarzenie);
+            }
+            else if (czyWazne == 1)
+            {
+                //utworzenie napisu z wydarzeniem
+                Label wydarzenie = new Label();
+
+                wydarzenie.Text = dzien.ToString() + ": " + nazwa;
+                wydarzenie.Name = "wydarzenie_" + nazwa;
+                wydarzenie.AutoSize = true;
+                wydarzenie.Visible = true;
+
+                Najwazniejsze_lista.Controls.Add(wydarzenie);
+            }
+            
         }
 
         private void WyczyscListyWydarzenNadchodzace()
@@ -331,12 +356,35 @@ namespace CalendarEX
 
         private void WczytajWydarzeniaWazne()
         {
+            //obiekt nowego polaczenia do bazy danych
+            SQLiteConnection sqlitePolaczenie = new SQLiteConnection("Data Source=dane.sqlite;Version=3;New=False;Compress=True");
+            //proba podlaczenia do bazy danych
+            try
+            {
+                sqlitePolaczenie.Open();
+            }
+            catch { }
 
+            SQLiteCommand pobranieDat = sqlitePolaczenie.CreateCommand();
+            pobranieDat.CommandText = "SELECT dzien,miesiac,nazwa FROM main.Wydarzenia WHERE czyWazne = $czyWazne ORDER BY dzien ASC;";
+            pobranieDat.Parameters.AddWithValue("$czyWazne", 1);
+
+            SQLiteDataReader wynik = pobranieDat.ExecuteReader();
+            while (wynik.Read())
+            {
+                int dzien = wynik.GetInt16(0);
+                int miesiac = wynik.GetInt16(1);
+                string nazwa = wynik.GetString(2);
+
+                DodajWydarzenieDoListy(dzien, miesiac, nazwa, 1);
+            }
+
+            sqlitePolaczenie.Close();
         }
 
         private void WyczyscListyWydarzenWazne()
         {
-
+            Najwazniejsze_lista.Controls.Clear();
         }
     }
 }
