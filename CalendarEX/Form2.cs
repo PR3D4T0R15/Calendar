@@ -134,6 +134,7 @@ namespace CalendarEX
             {
                 PustyDzien pustaKontrolkaDni = new PustyDzien();
                 PodzialTygodni_kontrolkiDni.Controls.Add(pustaKontrolkaDni);
+                pustaKontrolkaDni.Name = "pusta_" + i.ToString();
             }
 
             //wypelnienie dni danego miesiaca
@@ -142,6 +143,7 @@ namespace CalendarEX
                 PelnyDzien kontrolkaDni = new PelnyDzien();
                 PodzialTygodni_kontrolkiDni.Controls.Add(kontrolkaDni);
                 kontrolkaDni.UstawNumerDnia(i);
+                kontrolkaDni.Name = "dzien_" + i.ToString();
             }
 
         }

@@ -56,7 +56,12 @@ namespace CalendarEX
 
             //tworzenie nowego zapytania
             SQLiteCommand wpisanieWydarzenia = sqlitePolaczenie.CreateCommand();
-            wpisanieWydarzenia.CommandText = "INSERT INTO main.Wydarzenia (nazwa, dzien, miesiac, rok, czyWazne) VALUES ('"+ nazwa +"', '"+ dzien +"', '"+ miesiac +"', '"+ rok +"', '"+ czyWazne +"');";
+            wpisanieWydarzenia.CommandText = "INSERT INTO main.Wydarzenia (nazwa, dzien, miesiac, rok, czyWazne) VALUES ('$nazwa', '$dzien', '$miesiac', '$rok', '$czyWazne');";
+            wpisanieWydarzenia.Parameters.AddWithValue("$nazwa", nazwa);
+            wpisanieWydarzenia.Parameters.AddWithValue("$dzien", dzien);
+            wpisanieWydarzenia.Parameters.AddWithValue("$miesiac", miesiac);
+            wpisanieWydarzenia.Parameters.AddWithValue("$rok", rok);
+            wpisanieWydarzenia.Parameters.AddWithValue("$czyWazne", czyWazne);
             //wykonanie zapytania
             try
             {
