@@ -226,12 +226,13 @@ namespace CalendarEX
         private void DodajWydarzenieDoListy(int dzien, int miesiac, string nazwa)
         {
             //utworzenie napisu z wydarzeniem
-            Label wydarzenie = new Label();
+            WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
-            wydarzenie.Text = dzien.ToString() + ": " + nazwa;
+            wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
             wydarzenie.Name = "wydarzenie_" + nazwa;
-            wydarzenie.AutoSize = true;
-            wydarzenie.Visible = true;
+
+            wydarzenie.Width = Styczen_lista.Width - 3;
+
 
             switch (miesiac)
             {
@@ -325,24 +326,22 @@ namespace CalendarEX
             if (czyWazne == 0)
             {
                 //utworzenie napisu z wydarzeniem
-                Label wydarzenie = new Label();
+                WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
-                wydarzenie.Text = dzien.ToString() + ": " + nazwa;
+                wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
                 wydarzenie.Name = "wydarzenie_" + nazwa;
-                wydarzenie.AutoSize = true;
-                wydarzenie.Visible = true;
+                wydarzenie.Width = Nadchodzace_lista.Width - 3;
 
                 Nadchodzace_lista.Controls.Add(wydarzenie);
             }
             else if (czyWazne == 1)
             {
                 //utworzenie napisu z wydarzeniem
-                Label wydarzenie = new Label();
+                WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
-                wydarzenie.Text = dzien.ToString() + ": " + nazwa;
+                wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
                 wydarzenie.Name = "wydarzenie_" + nazwa;
-                wydarzenie.AutoSize = true;
-                wydarzenie.Visible = true;
+                wydarzenie.Width = Najwazniejsze_lista.Width - 3;
 
                 Najwazniejsze_lista.Controls.Add(wydarzenie);
             }
@@ -385,6 +384,19 @@ namespace CalendarEX
         private void WyczyscListyWydarzenWazne()
         {
             Najwazniejsze_lista.Controls.Clear();
+        }
+
+        private void GlowneOkno_Resize(object sender, EventArgs e)
+        {
+            WyczyscListyWydarzenMiesiecy();
+            WczytajWydarzeniaOknoGlowne();
+
+            WyczyscListyWydarzenNadchodzace();
+            WczytajWydarzeniaNadchodzace();
+
+            WyczyscListyWydarzenWazne();
+            WczytajWydarzeniaWazne();
+
         }
     }
 }
