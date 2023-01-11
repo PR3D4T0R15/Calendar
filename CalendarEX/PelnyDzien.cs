@@ -73,12 +73,6 @@ namespace CalendarEX
             ZadaniaDnia.Controls.Add(wydarzenie);
         }
 
-        private void PelnyDzien_Load(object sender, EventArgs e)
-        {
-            int numerDnia = Convert.ToInt16(NumerDnia.Text);
-            WczytajWydarzeniaDnia(numerDnia);
-        }
-
         private void NumerDnia_TextChanged(object sender, EventArgs e)
         {
             int numerDnia = Convert.ToInt16(NumerDnia.Text);
