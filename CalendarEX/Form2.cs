@@ -13,9 +13,12 @@ namespace CalendarEX
 {
     public partial class OknoMiesiac : Form
     {
+        public static OknoMiesiac uchwytOknoMiesiac;
+
         public OknoMiesiac()
         {
             InitializeComponent();
+            uchwytOknoMiesiac = this;
         }
 
         private void PodzialTytul_tekst_Click(object sender, EventArgs e)
@@ -156,6 +159,12 @@ namespace CalendarEX
         }
 
         private void OknoMiesiac_Resize(object sender, EventArgs e)
+        {
+            PodzialTygodni_kontrolkiDni.Controls.Clear();
+            WyswietlKalendarz();
+        }
+
+        public void AktualizujWydarzenia()
         {
             PodzialTygodni_kontrolkiDni.Controls.Clear();
             WyswietlKalendarz();

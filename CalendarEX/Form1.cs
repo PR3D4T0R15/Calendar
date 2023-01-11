@@ -17,10 +17,12 @@ namespace CalendarEX
         public static int miesiac = 0;
         public static int dzien = 0;
         public static DateTime dataTeraz;
+        public static GlowneOkno uchwytGlowneOkno;
 
         public GlowneOkno()
         {
             InitializeComponent();
+            uchwytGlowneOkno = this;
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -397,6 +399,18 @@ namespace CalendarEX
             WyczyscListyWydarzenWazne();
             WczytajWydarzeniaWazne();
 
+        }
+
+        public void AktualzujWydarzenia()
+        {
+            WyczyscListyWydarzenMiesiecy();
+            WczytajWydarzeniaOknoGlowne();
+
+            WyczyscListyWydarzenNadchodzace();
+            WczytajWydarzeniaNadchodzace();
+
+            WyczyscListyWydarzenWazne();
+            WczytajWydarzeniaWazne();
         }
     }
 }

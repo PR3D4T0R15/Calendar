@@ -17,14 +17,15 @@ namespace CalendarEX
         public OknoNoweWydarzenie()
         {
             InitializeComponent();
-            
+           
         }
 
         private void Zapisz_Click(object sender, EventArgs e)
         {
             DodajWpisyTerminarza();
             this.Hide();
-            
+            GlowneOkno.uchwytGlowneOkno.AktualzujWydarzenia();
+            OknoMiesiac.uchwytOknoMiesiac.AktualizujWydarzenia();
         }
 
         public void UstawDomyslnaDate(int dzien, int miesiac, int rok)

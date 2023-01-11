@@ -78,5 +78,7 @@ namespace CalendarEX
             int numerDnia = Convert.ToInt16(NumerDnia.Text);
             WczytajWydarzeniaDnia(numerDnia);
         }
+
+
     }
 }
