@@ -231,7 +231,7 @@ namespace CalendarEX
             wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
             wydarzenie.Name = "wydarzenie_" + nazwa;
 
-            wydarzenie.Width = Styczen_lista.Width - 3;
+            wydarzenie.Width = Styczen_lista.Width - 6;
 
 
             switch (miesiac)
@@ -330,7 +330,7 @@ namespace CalendarEX
 
                 wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
                 wydarzenie.Name = "wydarzenie_" + nazwa;
-                wydarzenie.Width = Nadchodzace_lista.Width - 3;
+                wydarzenie.Width = Nadchodzace_lista.Width - 6;
 
                 Nadchodzace_lista.Controls.Add(wydarzenie);
             }
@@ -341,7 +341,7 @@ namespace CalendarEX
 
                 wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
                 wydarzenie.Name = "wydarzenie_" + nazwa;
-                wydarzenie.Width = Najwazniejsze_lista.Width - 3;
+                wydarzenie.Width = Najwazniejsze_lista.Width - 6;
 
                 Najwazniejsze_lista.Controls.Add(wydarzenie);
             }

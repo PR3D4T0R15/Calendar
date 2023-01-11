@@ -214,13 +214,14 @@
             this.PanelGlowny_Daty.Controls.Add(this.Daty_Najwazniejsze, 0, 1);
             this.PanelGlowny_Daty.Controls.Add(this.Daty_Notatki, 0, 2);
             this.PanelGlowny_Daty.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelGlowny_Daty.Location = new System.Drawing.Point(4, 4);
+            this.PanelGlowny_Daty.Location = new System.Drawing.Point(1, 1);
+            this.PanelGlowny_Daty.Margin = new System.Windows.Forms.Padding(0);
             this.PanelGlowny_Daty.Name = "PanelGlowny_Daty";
             this.PanelGlowny_Daty.RowCount = 3;
             this.PanelGlowny_Daty.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.PanelGlowny_Daty.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.PanelGlowny_Daty.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.PanelGlowny_Daty.Size = new System.Drawing.Size(171, 746);
+            this.PanelGlowny_Daty.Size = new System.Drawing.Size(177, 752);
             this.PanelGlowny_Daty.TabIndex = 0;
             // 
             // Daty_Nadchodzace
@@ -237,7 +238,7 @@
             this.Daty_Nadchodzace.RowCount = 2;
             this.Daty_Nadchodzace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Daty_Nadchodzace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Daty_Nadchodzace.Size = new System.Drawing.Size(171, 261);
+            this.Daty_Nadchodzace.Size = new System.Drawing.Size(177, 263);
             this.Daty_Nadchodzace.TabIndex = 0;
             // 
             // Nadchodzace_tekst
@@ -246,7 +247,7 @@
             this.Nadchodzace_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Nadchodzace_tekst.Location = new System.Drawing.Point(4, 1);
             this.Nadchodzace_tekst.Name = "Nadchodzace_tekst";
-            this.Nadchodzace_tekst.Size = new System.Drawing.Size(163, 38);
+            this.Nadchodzace_tekst.Size = new System.Drawing.Size(169, 39);
             this.Nadchodzace_tekst.TabIndex = 0;
             this.Nadchodzace_tekst.Text = "NADCHODZĄCE WYDARZENIA";
             this.Nadchodzace_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -255,9 +256,10 @@
             // 
             this.Nadchodzace_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Nadchodzace_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Nadchodzace_lista.Location = new System.Drawing.Point(4, 43);
+            this.Nadchodzace_lista.Location = new System.Drawing.Point(1, 41);
+            this.Nadchodzace_lista.Margin = new System.Windows.Forms.Padding(0);
             this.Nadchodzace_lista.Name = "Nadchodzace_lista";
-            this.Nadchodzace_lista.Size = new System.Drawing.Size(163, 214);
+            this.Nadchodzace_lista.Size = new System.Drawing.Size(175, 221);
             this.Nadchodzace_lista.TabIndex = 1;
             // 
             // Daty_Najwazniejsze
@@ -268,13 +270,13 @@
             this.Daty_Najwazniejsze.Controls.Add(this.Najwazniejsze_tekst, 0, 0);
             this.Daty_Najwazniejsze.Controls.Add(this.Najwazniejsze_lista, 0, 1);
             this.Daty_Najwazniejsze.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Daty_Najwazniejsze.Location = new System.Drawing.Point(0, 261);
+            this.Daty_Najwazniejsze.Location = new System.Drawing.Point(0, 263);
             this.Daty_Najwazniejsze.Margin = new System.Windows.Forms.Padding(0);
             this.Daty_Najwazniejsze.Name = "Daty_Najwazniejsze";
             this.Daty_Najwazniejsze.RowCount = 2;
             this.Daty_Najwazniejsze.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Daty_Najwazniejsze.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Daty_Najwazniejsze.Size = new System.Drawing.Size(171, 261);
+            this.Daty_Najwazniejsze.Size = new System.Drawing.Size(177, 263);
             this.Daty_Najwazniejsze.TabIndex = 1;
             // 
             // Najwazniejsze_tekst
@@ -283,7 +285,7 @@
             this.Najwazniejsze_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Najwazniejsze_tekst.Location = new System.Drawing.Point(4, 1);
             this.Najwazniejsze_tekst.Name = "Najwazniejsze_tekst";
-            this.Najwazniejsze_tekst.Size = new System.Drawing.Size(163, 38);
+            this.Najwazniejsze_tekst.Size = new System.Drawing.Size(169, 39);
             this.Najwazniejsze_tekst.TabIndex = 0;
             this.Najwazniejsze_tekst.Text = "NAJWAŻNIEJSZE DATY";
             this.Najwazniejsze_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -292,9 +294,10 @@
             // 
             this.Najwazniejsze_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Najwazniejsze_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Najwazniejsze_lista.Location = new System.Drawing.Point(4, 43);
+            this.Najwazniejsze_lista.Location = new System.Drawing.Point(1, 41);
+            this.Najwazniejsze_lista.Margin = new System.Windows.Forms.Padding(0);
             this.Najwazniejsze_lista.Name = "Najwazniejsze_lista";
-            this.Najwazniejsze_lista.Size = new System.Drawing.Size(163, 214);
+            this.Najwazniejsze_lista.Size = new System.Drawing.Size(175, 221);
             this.Najwazniejsze_lista.TabIndex = 1;
             // 
             // Daty_Notatki
@@ -305,13 +308,13 @@
             this.Daty_Notatki.Controls.Add(this.Notatki_tekst, 0, 0);
             this.Daty_Notatki.Controls.Add(this.Notatki_lista, 0, 1);
             this.Daty_Notatki.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Daty_Notatki.Location = new System.Drawing.Point(0, 522);
+            this.Daty_Notatki.Location = new System.Drawing.Point(0, 526);
             this.Daty_Notatki.Margin = new System.Windows.Forms.Padding(0);
             this.Daty_Notatki.Name = "Daty_Notatki";
             this.Daty_Notatki.RowCount = 2;
             this.Daty_Notatki.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Daty_Notatki.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Daty_Notatki.Size = new System.Drawing.Size(171, 224);
+            this.Daty_Notatki.Size = new System.Drawing.Size(177, 226);
             this.Daty_Notatki.TabIndex = 2;
             // 
             // Notatki_tekst
@@ -320,7 +323,7 @@
             this.Notatki_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Notatki_tekst.Location = new System.Drawing.Point(4, 1);
             this.Notatki_tekst.Name = "Notatki_tekst";
-            this.Notatki_tekst.Size = new System.Drawing.Size(163, 33);
+            this.Notatki_tekst.Size = new System.Drawing.Size(169, 33);
             this.Notatki_tekst.TabIndex = 0;
             this.Notatki_tekst.Text = "NOTATKI";
             this.Notatki_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -329,9 +332,10 @@
             // 
             this.Notatki_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Notatki_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Notatki_lista.Location = new System.Drawing.Point(4, 38);
+            this.Notatki_lista.Location = new System.Drawing.Point(1, 35);
+            this.Notatki_lista.Margin = new System.Windows.Forms.Padding(0);
             this.Notatki_lista.Name = "Notatki_lista";
-            this.Notatki_lista.Size = new System.Drawing.Size(163, 182);
+            this.Notatki_lista.Size = new System.Drawing.Size(175, 190);
             this.Notatki_lista.TabIndex = 1;
             // 
             // PanelGlowny_Miesiace
