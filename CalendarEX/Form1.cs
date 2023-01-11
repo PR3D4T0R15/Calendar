@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,8 @@ namespace CalendarEX
             rok = dataTeraz.Year;
 
             UstawRok();
+            WyczyscListyWydarzenMiesiecy();
+            WczytajWydarzeniaOknoGlowne();
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -44,21 +47,22 @@ namespace CalendarEX
 
         }
 
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void PanelRoku_rokDoPrzodu_Click(object sender, EventArgs e)
         {
             rok++;
             UstawRok();
+
+            WyczyscListyWydarzenMiesiecy();
+            WczytajWydarzeniaOknoGlowne();
         }
 
         private void PanelRoku_rokDoTylu_Click(object sender, EventArgs e)
         {
             rok--;
             UstawRok();
+
+            WyczyscListyWydarzenMiesiecy();
+            WczytajWydarzeniaOknoGlowne();
         }
 
         private void PanelRoku_rok_Click(object sender, EventArgs e)
@@ -165,6 +169,109 @@ namespace CalendarEX
 
             OknoMiesiac WidokMiesiac = new OknoMiesiac();
             WidokMiesiac.Show();
+        }
+
+        private void WczytajWydarzeniaOknoGlowne()
+        {
+            //obiekt nowego polaczenia do bazy danych
+            SQLiteConnection sqlitePolaczenie = new SQLiteConnection("Data Source=dane.sqlite;Version=3;New=False;Compress=True");
+            //proba podlaczenia do bazy danych
+            try
+            {
+                sqlitePolaczenie.Open();
+            }
+            catch { }
+
+            for(int i = 1;  i <= 12; i++)
+            {
+                SQLiteCommand pobranieDat = sqlitePolaczenie.CreateCommand();
+                pobranieDat.CommandText = "SELECT dzien,nazwa FROM main.Wydarzenia WHERE miesiac = $miesiac AND rok = $rok ORDER BY dzien ASC;";
+                pobranieDat.Parameters.AddWithValue("$miesiac", i);
+                pobranieDat.Parameters.AddWithValue("$rok", GlowneOkno.rok);
+
+                SQLiteDataReader wynik = pobranieDat.ExecuteReader();
+                while(wynik.Read())
+                {
+                    int dzien = wynik.GetInt16(0);
+                    string nazwa = wynik.GetString(1);
+
+                    DodajWydarzenieDoListy(dzien, i, nazwa);
+                }
+            }
+            sqlitePolaczenie.Close();
+        }
+
+        private void DodajWydarzenieDoListy(int dzien, int miesiac, string nazwa)
+        {
+            //utworzenie napisu z wydarzeniem
+            Label wydarzenie = new Label();
+
+            wydarzenie.Text = dzien.ToString() + ": " + nazwa;
+            wydarzenie.Name = "wydarzenie_" + nazwa;
+            wydarzenie.AutoSize = true;
+            wydarzenie.Visible = true;
+
+            switch (miesiac)
+            {
+                case 1:
+                    Styczen_lista.Controls.Add(wydarzenie);
+                    break;
+                case 2:
+                    Luty_lista.Controls.Add(wydarzenie);
+                    break;
+                case 3:
+                    Marzec_lista.Controls.Add(wydarzenie);
+                    break;
+                case 4:
+                    Kwiecien_lista.Controls.Add(wydarzenie);
+                    break;
+                case 5:
+                    Maj_lista.Controls.Add(wydarzenie);
+                    break;
+                case 6:
+                    Czerwiec_lista.Controls.Add(wydarzenie);
+                    break;
+                case 7:
+                    Lipiec_lista.Controls.Add(wydarzenie);
+                    break;
+                case 8:
+                    Sierpien_lista.Controls.Add(wydarzenie);
+                    break;
+                case 9:
+                    Wrzesien_lista.Controls.Add(wydarzenie);
+                    break;
+                case 10:
+                    Pazdziernik_lista.Controls.Add(wydarzenie);
+                    break;
+                case 11:
+                    Listopad_lista.Controls.Add(wydarzenie);
+                    break;
+                case 12:
+                    Grudzien_lista.Controls.Add(wydarzenie);
+                    break;
+            }
+        }
+        
+        private void WyczyscListyWydarzenMiesiecy()
+        {
+            Styczen_lista.Controls.Clear();
+            Luty_lista.Controls.Clear();
+            Marzec_lista.Controls.Clear();
+            Kwiecien_lista.Controls.Clear();
+            Maj_lista.Controls.Clear();
+            Czerwiec_lista.Controls.Clear();
+            Lipiec_lista.Controls.Clear();
+            Sierpien_lista.Controls.Clear();
+            Wrzesien_lista.Controls.Clear();
+            Pazdziernik_lista.Controls.Clear();
+            Listopad_lista.Controls.Clear();
+            Grudzien_lista.Controls.Clear();
+
+        }
+
+        private void WczytajWydarzeniaNadchodzace()
+        {
+
         }
     }
 }

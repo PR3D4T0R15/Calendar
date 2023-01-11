@@ -248,6 +248,7 @@
             // Nadchodzace_lista
             // 
             this.Nadchodzace_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Nadchodzace_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Nadchodzace_lista.Location = new System.Drawing.Point(4, 42);
             this.Nadchodzace_lista.Name = "Nadchodzace_lista";
             this.Nadchodzace_lista.Size = new System.Drawing.Size(157, 209);
@@ -283,6 +284,7 @@
             // Najwazniejsze_lista
             // 
             this.Najwazniejsze_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Najwazniejsze_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Najwazniejsze_lista.Location = new System.Drawing.Point(4, 42);
             this.Najwazniejsze_lista.Name = "Najwazniejsze_lista";
             this.Najwazniejsze_lista.Size = new System.Drawing.Size(157, 209);
@@ -318,6 +320,7 @@
             // Notatki_lista
             // 
             this.Notatki_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Notatki_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Notatki_lista.Location = new System.Drawing.Point(4, 37);
             this.Notatki_lista.Name = "Notatki_lista";
             this.Notatki_lista.Size = new System.Drawing.Size(157, 177);
@@ -384,6 +387,7 @@
             // Styczen_lista
             // 
             this.Styczen_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Styczen_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Styczen_lista.Location = new System.Drawing.Point(4, 59);
             this.Styczen_lista.Name = "Styczen_lista";
             this.Styczen_lista.Size = new System.Drawing.Size(153, 304);
@@ -420,6 +424,7 @@
             // Lipiec_lista
             // 
             this.Lipiec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Lipiec_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Lipiec_lista.Location = new System.Drawing.Point(4, 59);
             this.Lipiec_lista.Name = "Lipiec_lista";
             this.Lipiec_lista.Size = new System.Drawing.Size(153, 304);
@@ -456,6 +461,7 @@
             // Luty_lista
             // 
             this.Luty_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Luty_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Luty_lista.Location = new System.Drawing.Point(4, 59);
             this.Luty_lista.Name = "Luty_lista";
             this.Luty_lista.Size = new System.Drawing.Size(153, 304);
@@ -492,6 +498,7 @@
             // Sierpien_lista
             // 
             this.Sierpien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Sierpien_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Sierpien_lista.Location = new System.Drawing.Point(4, 59);
             this.Sierpien_lista.Name = "Sierpien_lista";
             this.Sierpien_lista.Size = new System.Drawing.Size(153, 304);
@@ -528,6 +535,7 @@
             // Marzec_lista
             // 
             this.Marzec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Marzec_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Marzec_lista.Location = new System.Drawing.Point(4, 59);
             this.Marzec_lista.Name = "Marzec_lista";
             this.Marzec_lista.Size = new System.Drawing.Size(153, 304);
@@ -564,6 +572,7 @@
             // Wrzesien_lista
             // 
             this.Wrzesien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Wrzesien_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Wrzesien_lista.Location = new System.Drawing.Point(4, 59);
             this.Wrzesien_lista.Name = "Wrzesien_lista";
             this.Wrzesien_lista.Size = new System.Drawing.Size(153, 304);
@@ -600,6 +609,7 @@
             // Kwiecien_lista
             // 
             this.Kwiecien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Kwiecien_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Kwiecien_lista.Location = new System.Drawing.Point(4, 59);
             this.Kwiecien_lista.Name = "Kwiecien_lista";
             this.Kwiecien_lista.Size = new System.Drawing.Size(153, 304);
@@ -624,6 +634,7 @@
             // Pazdziernik_lista
             // 
             this.Pazdziernik_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Pazdziernik_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Pazdziernik_lista.Location = new System.Drawing.Point(4, 59);
             this.Pazdziernik_lista.Name = "Pazdziernik_lista";
             this.Pazdziernik_lista.Size = new System.Drawing.Size(153, 304);
@@ -672,6 +683,7 @@
             // Maj_lista
             // 
             this.Maj_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Maj_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Maj_lista.Location = new System.Drawing.Point(4, 59);
             this.Maj_lista.Name = "Maj_lista";
             this.Maj_lista.Size = new System.Drawing.Size(153, 304);
@@ -708,6 +720,7 @@
             // Listopad_lista
             // 
             this.Listopad_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Listopad_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Listopad_lista.Location = new System.Drawing.Point(4, 59);
             this.Listopad_lista.Name = "Listopad_lista";
             this.Listopad_lista.Size = new System.Drawing.Size(153, 304);
@@ -744,6 +757,7 @@
             // Czerwiec_lista
             // 
             this.Czerwiec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Czerwiec_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Czerwiec_lista.Location = new System.Drawing.Point(4, 59);
             this.Czerwiec_lista.Name = "Czerwiec_lista";
             this.Czerwiec_lista.Size = new System.Drawing.Size(154, 304);
@@ -780,6 +794,7 @@
             // Grudzien_lista
             // 
             this.Grudzien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Grudzien_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Grudzien_lista.Location = new System.Drawing.Point(4, 59);
             this.Grudzien_lista.Name = "Grudzien_lista";
             this.Grudzien_lista.Size = new System.Drawing.Size(154, 304);
