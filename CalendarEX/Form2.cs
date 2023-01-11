@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SQLite;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -135,6 +136,9 @@ namespace CalendarEX
                 PustyDzien pustaKontrolkaDni = new PustyDzien();
                 PodzialTygodni_kontrolkiDni.Controls.Add(pustaKontrolkaDni);
                 pustaKontrolkaDni.Name = "pusta_" + i.ToString();
+
+                pustaKontrolkaDni.Width = (PodzialTygodni_kontrolkiDni.Width / 7) - 2;
+                pustaKontrolkaDni.Height = (PodzialTygodni_kontrolkiDni.Height / 6) - 2;
             }
 
             //wypelnienie dni danego miesiaca
@@ -144,8 +148,19 @@ namespace CalendarEX
                 PodzialTygodni_kontrolkiDni.Controls.Add(kontrolkaDni);
                 kontrolkaDni.UstawNumerDnia(i);
                 kontrolkaDni.Name = "dzien_" + i.ToString();
+
+                kontrolkaDni.Width = (PodzialTygodni_kontrolkiDni.Width / 7) - 2;
+                kontrolkaDni.Height = (PodzialTygodni_kontrolkiDni.Height / 6) - 2;
             }
 
         }
+
+        private void OknoMiesiac_Resize(object sender, EventArgs e)
+        {
+            PodzialTygodni_kontrolkiDni.Controls.Clear();
+            WyswietlKalendarz();
+        }
+
+        
     }
 }

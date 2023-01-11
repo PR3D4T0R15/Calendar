@@ -114,6 +114,12 @@
     <Compile Include="PustyDzien.Designer.cs">
       <DependentUpon>PustyDzien.cs</DependentUpon>
     </Compile>
+    <Compile Include="WpisWydarzenia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WpisWydarzenia.Designer.cs">
+      <DependentUpon>WpisWydarzenia.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,6 +150,9 @@
     </Compile>
     <EmbeddedResource Include="PustyDzien.resx">
       <DependentUpon>PustyDzien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WpisWydarzenia.resx">
+      <DependentUpon>WpisWydarzenia.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="dane.sqlite" />
     <None Include="packages.config" />

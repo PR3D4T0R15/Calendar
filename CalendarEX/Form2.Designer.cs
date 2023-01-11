@@ -248,6 +248,7 @@
             this.Name = "OknoMiesiac";
             this.Text = "Miesiąc";
             this.Load += new System.EventHandler(this.OknoMiesiac_Load);
+            this.Resize += new System.EventHandler(this.OknoMiesiac_Resize);
             this.OknoMiesiac_Podzial.Panel1.ResumeLayout(false);
             this.OknoMiesiac_Podzial.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.OknoMiesiac_Podzial)).EndInit();

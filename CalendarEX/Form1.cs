@@ -15,6 +15,7 @@ namespace CalendarEX
     {
         public static int rok = 0;
         public static int miesiac = 0;
+        public static int dzien = 0;
         public static DateTime dataTeraz;
 
         public GlowneOkno()
@@ -31,10 +32,19 @@ namespace CalendarEX
         {
             dataTeraz = DateTime.Now;
             rok = dataTeraz.Year;
+            dzien = dataTeraz.Day;
 
             UstawRok();
+
             WyczyscListyWydarzenMiesiecy();
             WczytajWydarzeniaOknoGlowne();
+
+            WyczyscListyWydarzenNadchodzace();
+            WczytajWydarzeniaNadchodzace();
+
+            WyczyscListyWydarzenWazne();
+            WczytajWydarzeniaWazne();
+
         }
 
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
@@ -54,6 +64,12 @@ namespace CalendarEX
 
             WyczyscListyWydarzenMiesiecy();
             WczytajWydarzeniaOknoGlowne();
+
+            WyczyscListyWydarzenNadchodzace();
+            WczytajWydarzeniaNadchodzace();
+
+            WyczyscListyWydarzenWazne();
+            WczytajWydarzeniaWazne();
         }
 
         private void PanelRoku_rokDoTylu_Click(object sender, EventArgs e)
@@ -63,6 +79,12 @@ namespace CalendarEX
 
             WyczyscListyWydarzenMiesiecy();
             WczytajWydarzeniaOknoGlowne();
+
+            WyczyscListyWydarzenNadchodzace();
+            WczytajWydarzeniaNadchodzace();
+
+            WyczyscListyWydarzenWazne();
+            WczytajWydarzeniaWazne();
         }
 
         private void PanelRoku_rok_Click(object sender, EventArgs e)
@@ -204,12 +226,13 @@ namespace CalendarEX
         private void DodajWydarzenieDoListy(int dzien, int miesiac, string nazwa)
         {
             //utworzenie napisu z wydarzeniem
-            Label wydarzenie = new Label();
+            WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
-            wydarzenie.Text = dzien.ToString() + ": " + nazwa;
+            wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
             wydarzenie.Name = "wydarzenie_" + nazwa;
-            wydarzenie.AutoSize = true;
-            wydarzenie.Visible = true;
+
+            wydarzenie.Width = Styczen_lista.Width - 6;
+
 
             switch (miesiac)
             {
@@ -271,6 +294,108 @@ namespace CalendarEX
 
         private void WczytajWydarzeniaNadchodzace()
         {
+            //obiekt nowego polaczenia do bazy danych
+            SQLiteConnection sqlitePolaczenie = new SQLiteConnection("Data Source=dane.sqlite;Version=3;New=False;Compress=True");
+            //proba podlaczenia do bazy danych
+            try
+            {
+                sqlitePolaczenie.Open();
+            }
+            catch { }
+
+            SQLiteCommand pobranieDat = sqlitePolaczenie.CreateCommand();
+            pobranieDat.CommandText = "SELECT dzien,nazwa FROM main.Wydarzenia WHERE miesiac = $miesiac AND dzien > $dzien AND rok=  $rok ORDER BY dzien ASC;";
+            pobranieDat.Parameters.AddWithValue("$miesiac", GlowneOkno.miesiac + 1);
+            pobranieDat.Parameters.AddWithValue("$dzien", GlowneOkno.dzien);
+            pobranieDat.Parameters.AddWithValue("$rok", GlowneOkno.rok);
+
+            SQLiteDataReader wynik = pobranieDat.ExecuteReader();
+            while (wynik.Read())
+               {
+                 int dzien = wynik.GetInt16(0);
+                 string nazwa = wynik.GetString(1);
+
+                 DodajWydarzenieDoListy(dzien, 0, nazwa, 0);
+                }
+            
+            sqlitePolaczenie.Close();
+        }
+
+        private void DodajWydarzenieDoListy(int dzien, int miesiac, string nazwa, int czyWazne)
+        {
+            if (czyWazne == 0)
+            {
+                //utworzenie napisu z wydarzeniem
+                WpisWydarzenia wydarzenie = new WpisWydarzenia();
+
+                wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
+                wydarzenie.Name = "wydarzenie_" + nazwa;
+                wydarzenie.Width = Nadchodzace_lista.Width - 6;
+
+                Nadchodzace_lista.Controls.Add(wydarzenie);
+            }
+            else if (czyWazne == 1)
+            {
+                //utworzenie napisu z wydarzeniem
+                WpisWydarzenia wydarzenie = new WpisWydarzenia();
+
+                wydarzenie.UstawTekst(dzien.ToString() + "." + miesiac.ToString() + " : " + nazwa);
+                wydarzenie.Name = "wydarzenie_" + nazwa;
+                wydarzenie.Width = Najwazniejsze_lista.Width - 6;
+
+                Najwazniejsze_lista.Controls.Add(wydarzenie);
+            }
+            
+        }
+
+        private void WyczyscListyWydarzenNadchodzace()
+        {
+            Nadchodzace_lista.Controls.Clear();
+        }
+
+        private void WczytajWydarzeniaWazne()
+        {
+            //obiekt nowego polaczenia do bazy danych
+            SQLiteConnection sqlitePolaczenie = new SQLiteConnection("Data Source=dane.sqlite;Version=3;New=False;Compress=True");
+            //proba podlaczenia do bazy danych
+            try
+            {
+                sqlitePolaczenie.Open();
+            }
+            catch { }
+
+            SQLiteCommand pobranieDat = sqlitePolaczenie.CreateCommand();
+            pobranieDat.CommandText = "SELECT dzien,miesiac,nazwa FROM main.Wydarzenia WHERE czyWazne = $czyWazne ORDER BY dzien ASC;";
+            pobranieDat.Parameters.AddWithValue("$czyWazne", 1);
+
+            SQLiteDataReader wynik = pobranieDat.ExecuteReader();
+            while (wynik.Read())
+            {
+                int dzien = wynik.GetInt16(0);
+                int miesiac = wynik.GetInt16(1);
+                string nazwa = wynik.GetString(2);
+
+                DodajWydarzenieDoListy(dzien, miesiac, nazwa, 1);
+            }
+
+            sqlitePolaczenie.Close();
+        }
+
+        private void WyczyscListyWydarzenWazne()
+        {
+            Najwazniejsze_lista.Controls.Clear();
+        }
+
+        private void GlowneOkno_Resize(object sender, EventArgs e)
+        {
+            WyczyscListyWydarzenMiesiecy();
+            WczytajWydarzeniaOknoGlowne();
+
+            WyczyscListyWydarzenNadchodzace();
+            WczytajWydarzeniaNadchodzace();
+
+            WyczyscListyWydarzenWazne();
+            WczytajWydarzeniaWazne();
 
         }
     }

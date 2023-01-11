@@ -61,10 +61,12 @@
             this.NumerDnia.TabIndex = 0;
             this.NumerDnia.Text = "label1";
             this.NumerDnia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NumerDnia.TextChanged += new System.EventHandler(this.NumerDnia_TextChanged);
             this.NumerDnia.Click += new System.EventHandler(this.NumerDnia_Click);
             // 
             // ZadaniaDnia
             // 
+            this.ZadaniaDnia.AutoScroll = true;
             this.ZadaniaDnia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ZadaniaDnia.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.ZadaniaDnia.Location = new System.Drawing.Point(0, 36);
