@@ -16,5 +16,15 @@ namespace CalendarEX
         {
             InitializeComponent();
         }
+
+        private void Przyciski_zapisz_Click(object sender, EventArgs e)
+        {
+            string tekst = PanelNotatek.Text;
+        }
+
+        private void Przyciski_anuluj_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

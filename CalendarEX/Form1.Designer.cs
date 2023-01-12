@@ -44,7 +44,6 @@
             this.Najwazniejsze_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Daty_Notatki = new System.Windows.Forms.TableLayoutPanel();
             this.Notatki_tekst = new System.Windows.Forms.Label();
-            this.Notatki_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.PanelGlowny_Miesiace = new System.Windows.Forms.TableLayoutPanel();
             this.Miesiace_Styczen = new System.Windows.Forms.TableLayoutPanel();
             this.Styczen_tekst = new System.Windows.Forms.Label();
@@ -82,6 +81,7 @@
             this.Miesiace_Grudzien = new System.Windows.Forms.TableLayoutPanel();
             this.Grudzien_tekst = new System.Windows.Forms.Label();
             this.Grudzien_lista = new System.Windows.Forms.FlowLayoutPanel();
+            this.Notatki_pole = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GlowneOkno_podzial)).BeginInit();
             this.GlowneOkno_podzial.Panel1.SuspendLayout();
             this.GlowneOkno_podzial.Panel2.SuspendLayout();
@@ -306,7 +306,7 @@
             this.Daty_Notatki.ColumnCount = 1;
             this.Daty_Notatki.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.Daty_Notatki.Controls.Add(this.Notatki_tekst, 0, 0);
-            this.Daty_Notatki.Controls.Add(this.Notatki_lista, 0, 1);
+            this.Daty_Notatki.Controls.Add(this.Notatki_pole, 0, 1);
             this.Daty_Notatki.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Daty_Notatki.Location = new System.Drawing.Point(0, 526);
             this.Daty_Notatki.Margin = new System.Windows.Forms.Padding(0);
@@ -327,16 +327,7 @@
             this.Notatki_tekst.TabIndex = 0;
             this.Notatki_tekst.Text = "NOTATKI";
             this.Notatki_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Notatki_lista
-            // 
-            this.Notatki_lista.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Notatki_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Notatki_lista.Location = new System.Drawing.Point(1, 35);
-            this.Notatki_lista.Margin = new System.Windows.Forms.Padding(0);
-            this.Notatki_lista.Name = "Notatki_lista";
-            this.Notatki_lista.Size = new System.Drawing.Size(175, 190);
-            this.Notatki_lista.TabIndex = 1;
+            this.Notatki_tekst.Click += new System.EventHandler(this.Notatki_tekst_Click);
             // 
             // PanelGlowny_Miesiace
             // 
@@ -825,6 +816,18 @@
             this.Grudzien_lista.Size = new System.Drawing.Size(161, 312);
             this.Grudzien_lista.TabIndex = 1;
             // 
+            // Notatki_pole
+            // 
+            this.Notatki_pole.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Notatki_pole.Location = new System.Drawing.Point(1, 35);
+            this.Notatki_pole.Margin = new System.Windows.Forms.Padding(0);
+            this.Notatki_pole.Multiline = true;
+            this.Notatki_pole.Name = "Notatki_pole";
+            this.Notatki_pole.ReadOnly = true;
+            this.Notatki_pole.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.Notatki_pole.Size = new System.Drawing.Size(175, 190);
+            this.Notatki_pole.TabIndex = 1;
+            // 
             // GlowneOkno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -921,7 +924,6 @@
         private System.Windows.Forms.Button PanelRoku_rokDoTylu;
         private System.Windows.Forms.FlowLayoutPanel Nadchodzace_lista;
         private System.Windows.Forms.FlowLayoutPanel Najwazniejsze_lista;
-        private System.Windows.Forms.FlowLayoutPanel Notatki_lista;
         private System.Windows.Forms.FlowLayoutPanel Styczen_lista;
         private System.Windows.Forms.FlowLayoutPanel Lipiec_lista;
         private System.Windows.Forms.FlowLayoutPanel Luty_lista;
@@ -935,6 +937,7 @@
         private System.Windows.Forms.FlowLayoutPanel Czerwiec_lista;
         private System.Windows.Forms.FlowLayoutPanel Grudzien_lista;
         private System.Windows.Forms.Label Pazdziernik_tekst;
+        private System.Windows.Forms.TextBox Notatki_pole;
     }
 }
 

@@ -412,5 +412,11 @@ namespace CalendarEX
             WyczyscListyWydarzenWazne();
             WczytajWydarzeniaWazne();
         }
+
+        private void Notatki_tekst_Click(object sender, EventArgs e)
+        {
+            OknoNotatki OknoNotatki = new OknoNotatki();
+            OknoNotatki.Show();
+        }
     }
 }
