@@ -67,7 +67,7 @@ namespace CalendarEX
             WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
             wydarzenie.UstawTekst(nazwa);
-            wydarzenie.Name = "wydarzenie_" + nazwa;
+            wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
             wydarzenie.Width = ZadaniaDnia.Width - 8;
 
             ZadaniaDnia.Controls.Add(wydarzenie);

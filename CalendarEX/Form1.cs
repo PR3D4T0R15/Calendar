@@ -231,7 +231,7 @@ namespace CalendarEX
             WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
             wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
-            wydarzenie.Name = "wydarzenie_" + nazwa;
+            wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
 
             wydarzenie.Width = Styczen_lista.Width - 6;
 
@@ -331,7 +331,7 @@ namespace CalendarEX
                 WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
                 wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
-                wydarzenie.Name = "wydarzenie_" + nazwa;
+                wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
                 wydarzenie.Width = Nadchodzace_lista.Width - 6;
 
                 Nadchodzace_lista.Controls.Add(wydarzenie);
@@ -342,7 +342,7 @@ namespace CalendarEX
                 WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
                 wydarzenie.UstawTekst(dzien.ToString() + "." + miesiac.ToString() + " : " + nazwa);
-                wydarzenie.Name = "wydarzenie_" + nazwa;
+                wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
                 wydarzenie.Width = Najwazniejsze_lista.Width - 6;
 
                 Najwazniejsze_lista.Controls.Add(wydarzenie);
