@@ -26,11 +26,6 @@ namespace CalendarEX
             uchwytGlowneOkno = this;
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             dataTeraz = DateTime.Now;
@@ -49,16 +44,6 @@ namespace CalendarEX
             WczytajWydarzeniaWazne();
 
             OdczytajDane();
-
-        }
-
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 

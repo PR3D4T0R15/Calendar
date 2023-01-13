@@ -118,12 +118,10 @@
             // GlowneOkno_podzial.Panel1
             // 
             this.GlowneOkno_podzial.Panel1.Controls.Add(this.PanelRoku);
-            this.GlowneOkno_podzial.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // GlowneOkno_podzial.Panel2
             // 
             this.GlowneOkno_podzial.Panel2.Controls.Add(this.PanelGlowny);
-            this.GlowneOkno_podzial.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.GlowneOkno_podzial.Size = new System.Drawing.Size(1189, 810);
             this.GlowneOkno_podzial.SplitterDistance = 52;
             this.GlowneOkno_podzial.TabIndex = 0;
