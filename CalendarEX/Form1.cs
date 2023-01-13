@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,10 +18,12 @@ namespace CalendarEX
         public static int miesiac = 0;
         public static int dzien = 0;
         public static DateTime dataTeraz;
+        public static GlowneOkno uchwytGlowneOkno;
 
         public GlowneOkno()
         {
             InitializeComponent();
+            uchwytGlowneOkno = this;
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -44,6 +47,8 @@ namespace CalendarEX
 
             WyczyscListyWydarzenWazne();
             WczytajWydarzeniaWazne();
+
+            OdczytajDane();
 
         }
 
@@ -229,8 +234,8 @@ namespace CalendarEX
             WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
             wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
-            wydarzenie.Name = "wydarzenie_" + nazwa;
-
+            wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
+            wydarzenie.WylaczAkcjeKlikniecia();
             wydarzenie.Width = Styczen_lista.Width - 6;
 
 
@@ -329,9 +334,9 @@ namespace CalendarEX
                 WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
                 wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
-                wydarzenie.Name = "wydarzenie_" + nazwa;
+                wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
                 wydarzenie.Width = Nadchodzace_lista.Width - 6;
-
+                wydarzenie.WylaczAkcjeKlikniecia();
                 Nadchodzace_lista.Controls.Add(wydarzenie);
             }
             else if (czyWazne == 1)
@@ -340,9 +345,9 @@ namespace CalendarEX
                 WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
                 wydarzenie.UstawTekst(dzien.ToString() + "." + miesiac.ToString() + " : " + nazwa);
-                wydarzenie.Name = "wydarzenie_" + nazwa;
+                wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
                 wydarzenie.Width = Najwazniejsze_lista.Width - 6;
-
+                wydarzenie.WylaczAkcjeKlikniecia();
                 Najwazniejsze_lista.Controls.Add(wydarzenie);
             }
             
@@ -397,6 +402,40 @@ namespace CalendarEX
             WyczyscListyWydarzenWazne();
             WczytajWydarzeniaWazne();
 
+        }
+
+        public void AktualzujWydarzenia()
+        {
+            WyczyscListyWydarzenMiesiecy();
+            WczytajWydarzeniaOknoGlowne();
+
+            WyczyscListyWydarzenNadchodzace();
+            WczytajWydarzeniaNadchodzace();
+
+            WyczyscListyWydarzenWazne();
+            WczytajWydarzeniaWazne();
+        }
+
+        private void Notatki_tekst_Click(object sender, EventArgs e)
+        {
+            OknoNotatki OknoNotatki = new OknoNotatki();
+            OknoNotatki.Show();
+        }
+
+        public void OdczytajDane()
+        {
+            string plik = "notatki.txt";
+
+            try
+            {
+                StreamReader plikR = new StreamReader(plik);
+                Notatki_pole.Text = plikR.ReadToEnd();
+                plikR.Close();
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                
+            }
         }
     }
 }

@@ -56,6 +56,7 @@
             this.WpisWydarzenia_tekst.TabIndex = 0;
             this.WpisWydarzenia_tekst.Text = "TEKST WYDARZENIA";
             this.WpisWydarzenia_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.WpisWydarzenia_tekst.Click += new System.EventHandler(this.WpisWydarzenia_tekst_Click);
             // 
             // WpisWydarzenia
             // 

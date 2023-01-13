@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoNotatki));
             this.OknoNotatki_Podzial = new System.Windows.Forms.TableLayoutPanel();
-            this.Podzial_notatki = new System.Windows.Forms.TextBox();
+            this.PanelNotatek = new System.Windows.Forms.TextBox();
             this.Podzial_Przyciski = new System.Windows.Forms.FlowLayoutPanel();
             this.Przyciski_zapisz = new System.Windows.Forms.Button();
             this.Przyciski_anuluj = new System.Windows.Forms.Button();
@@ -42,7 +42,7 @@
             // 
             this.OknoNotatki_Podzial.ColumnCount = 1;
             this.OknoNotatki_Podzial.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.OknoNotatki_Podzial.Controls.Add(this.Podzial_notatki, 0, 0);
+            this.OknoNotatki_Podzial.Controls.Add(this.PanelNotatek, 0, 0);
             this.OknoNotatki_Podzial.Controls.Add(this.Podzial_Przyciski, 0, 1);
             this.OknoNotatki_Podzial.Dock = System.Windows.Forms.DockStyle.Fill;
             this.OknoNotatki_Podzial.Location = new System.Drawing.Point(0, 0);
@@ -53,15 +53,15 @@
             this.OknoNotatki_Podzial.Size = new System.Drawing.Size(800, 450);
             this.OknoNotatki_Podzial.TabIndex = 0;
             // 
-            // Podzial_notatki
+            // PanelNotatek
             // 
-            this.Podzial_notatki.AcceptsTab = true;
-            this.Podzial_notatki.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Podzial_notatki.Location = new System.Drawing.Point(3, 3);
-            this.Podzial_notatki.Multiline = true;
-            this.Podzial_notatki.Name = "Podzial_notatki";
-            this.Podzial_notatki.Size = new System.Drawing.Size(794, 408);
-            this.Podzial_notatki.TabIndex = 1;
+            this.PanelNotatek.AcceptsTab = true;
+            this.PanelNotatek.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelNotatek.Location = new System.Drawing.Point(3, 3);
+            this.PanelNotatek.Multiline = true;
+            this.PanelNotatek.Name = "PanelNotatek";
+            this.PanelNotatek.Size = new System.Drawing.Size(794, 408);
+            this.PanelNotatek.TabIndex = 1;
             // 
             // Podzial_Przyciski
             // 
@@ -82,6 +82,7 @@
             this.Przyciski_zapisz.TabIndex = 0;
             this.Przyciski_zapisz.Text = "ZAPISZ";
             this.Przyciski_zapisz.UseVisualStyleBackColor = true;
+            this.Przyciski_zapisz.Click += new System.EventHandler(this.Przyciski_zapisz_Click);
             // 
             // Przyciski_anuluj
             // 
@@ -91,6 +92,7 @@
             this.Przyciski_anuluj.TabIndex = 1;
             this.Przyciski_anuluj.Text = "ANULUJ";
             this.Przyciski_anuluj.UseVisualStyleBackColor = true;
+            this.Przyciski_anuluj.Click += new System.EventHandler(this.Przyciski_anuluj_Click);
             // 
             // OknoNotatki
             // 
@@ -101,6 +103,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoNotatki";
             this.Text = "Notatki";
+            this.Load += new System.EventHandler(this.OknoNotatki_Load);
             this.OknoNotatki_Podzial.ResumeLayout(false);
             this.OknoNotatki_Podzial.PerformLayout();
             this.Podzial_Przyciski.ResumeLayout(false);
@@ -111,7 +114,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel OknoNotatki_Podzial;
-        private System.Windows.Forms.TextBox Podzial_notatki;
+        private System.Windows.Forms.TextBox PanelNotatek;
         private System.Windows.Forms.FlowLayoutPanel Podzial_Przyciski;
         private System.Windows.Forms.Button Przyciski_zapisz;
         private System.Windows.Forms.Button Przyciski_anuluj;

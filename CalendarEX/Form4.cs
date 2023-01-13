@@ -17,12 +17,15 @@ namespace CalendarEX
         public OknoNoweWydarzenie()
         {
             InitializeComponent();
+           
         }
 
         private void Zapisz_Click(object sender, EventArgs e)
         {
             DodajWpisyTerminarza();
             this.Hide();
+            GlowneOkno.uchwytGlowneOkno.AktualzujWydarzenia();
+            OknoMiesiac.uchwytOknoMiesiac.AktualizujWydarzenia();
         }
 
         public void UstawDomyslnaDate(int dzien, int miesiac, int rok)
@@ -56,7 +59,7 @@ namespace CalendarEX
 
             //tworzenie nowego zapytania
             SQLiteCommand wpisanieWydarzenia = sqlitePolaczenie.CreateCommand();
-            wpisanieWydarzenia.CommandText = "INSERT INTO main.Wydarzenia (nazwa, dzien, miesiac, rok, czyWazne) VALUES ('$nazwa', '$dzien', '$miesiac', '$rok', '$czyWazne');";
+            wpisanieWydarzenia.CommandText = "INSERT INTO main.Wydarzenia (nazwa, dzien, miesiac, rok, czyWazne) VALUES ($nazwa, $dzien, $miesiac, $rok, $czyWazne);";
             wpisanieWydarzenia.Parameters.AddWithValue("$nazwa", nazwa);
             wpisanieWydarzenia.Parameters.AddWithValue("$dzien", dzien);
             wpisanieWydarzenia.Parameters.AddWithValue("$miesiac", miesiac);

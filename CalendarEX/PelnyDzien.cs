@@ -67,16 +67,10 @@ namespace CalendarEX
             WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
             wydarzenie.UstawTekst(nazwa);
-            wydarzenie.Name = "wydarzenie_" + nazwa;
+            wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
             wydarzenie.Width = ZadaniaDnia.Width - 8;
 
             ZadaniaDnia.Controls.Add(wydarzenie);
-        }
-
-        private void PelnyDzien_Load(object sender, EventArgs e)
-        {
-            int numerDnia = Convert.ToInt16(NumerDnia.Text);
-            WczytajWydarzeniaDnia(numerDnia);
         }
 
         private void NumerDnia_TextChanged(object sender, EventArgs e)
@@ -84,5 +78,7 @@ namespace CalendarEX
             int numerDnia = Convert.ToInt16(NumerDnia.Text);
             WczytajWydarzeniaDnia(numerDnia);
         }
+
+
     }
 }
