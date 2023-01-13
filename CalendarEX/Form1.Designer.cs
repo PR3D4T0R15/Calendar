@@ -44,6 +44,7 @@
             this.Najwazniejsze_lista = new System.Windows.Forms.FlowLayoutPanel();
             this.Daty_Notatki = new System.Windows.Forms.TableLayoutPanel();
             this.Notatki_tekst = new System.Windows.Forms.Label();
+            this.Notatki_pole = new System.Windows.Forms.TextBox();
             this.PanelGlowny_Miesiace = new System.Windows.Forms.TableLayoutPanel();
             this.Miesiace_Styczen = new System.Windows.Forms.TableLayoutPanel();
             this.Styczen_tekst = new System.Windows.Forms.Label();
@@ -81,7 +82,6 @@
             this.Miesiace_Grudzien = new System.Windows.Forms.TableLayoutPanel();
             this.Grudzien_tekst = new System.Windows.Forms.Label();
             this.Grudzien_lista = new System.Windows.Forms.FlowLayoutPanel();
-            this.Notatki_pole = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GlowneOkno_podzial)).BeginInit();
             this.GlowneOkno_podzial.Panel1.SuspendLayout();
             this.GlowneOkno_podzial.Panel2.SuspendLayout();
@@ -118,12 +118,10 @@
             // GlowneOkno_podzial.Panel1
             // 
             this.GlowneOkno_podzial.Panel1.Controls.Add(this.PanelRoku);
-            this.GlowneOkno_podzial.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // GlowneOkno_podzial.Panel2
             // 
             this.GlowneOkno_podzial.Panel2.Controls.Add(this.PanelGlowny);
-            this.GlowneOkno_podzial.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.GlowneOkno_podzial.Size = new System.Drawing.Size(1189, 810);
             this.GlowneOkno_podzial.SplitterDistance = 52;
             this.GlowneOkno_podzial.TabIndex = 0;
@@ -328,6 +326,19 @@
             this.Notatki_tekst.Text = "NOTATKI";
             this.Notatki_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Notatki_tekst.Click += new System.EventHandler(this.Notatki_tekst_Click);
+            // 
+            // Notatki_pole
+            // 
+            this.Notatki_pole.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Notatki_pole.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Notatki_pole.Location = new System.Drawing.Point(1, 35);
+            this.Notatki_pole.Margin = new System.Windows.Forms.Padding(0);
+            this.Notatki_pole.Multiline = true;
+            this.Notatki_pole.Name = "Notatki_pole";
+            this.Notatki_pole.ReadOnly = true;
+            this.Notatki_pole.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.Notatki_pole.Size = new System.Drawing.Size(175, 190);
+            this.Notatki_pole.TabIndex = 1;
             // 
             // PanelGlowny_Miesiace
             // 
@@ -815,19 +826,6 @@
             this.Grudzien_lista.Name = "Grudzien_lista";
             this.Grudzien_lista.Size = new System.Drawing.Size(161, 312);
             this.Grudzien_lista.TabIndex = 1;
-            // 
-            // Notatki_pole
-            // 
-            this.Notatki_pole.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Notatki_pole.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Notatki_pole.Location = new System.Drawing.Point(1, 35);
-            this.Notatki_pole.Margin = new System.Windows.Forms.Padding(0);
-            this.Notatki_pole.Multiline = true;
-            this.Notatki_pole.Name = "Notatki_pole";
-            this.Notatki_pole.ReadOnly = true;
-            this.Notatki_pole.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.Notatki_pole.Size = new System.Drawing.Size(175, 190);
-            this.Notatki_pole.TabIndex = 1;
             // 
             // GlowneOkno
             // 

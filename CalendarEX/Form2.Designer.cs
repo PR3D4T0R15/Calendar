@@ -98,7 +98,6 @@
             this.PodzialTytul_tekst.TabIndex = 0;
             this.PodzialTytul_tekst.Text = "MIESIĄC";
             this.PodzialTytul_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PodzialTytul_tekst.Click += new System.EventHandler(this.PodzialTytul_tekst_Click);
             // 
             // PodzialTytul_obraz
             // 

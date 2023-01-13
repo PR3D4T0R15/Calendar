@@ -21,11 +21,6 @@ namespace CalendarEX
             uchwytOknoMiesiac = this;
         }
 
-        private void PodzialTytul_tekst_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void OknoMiesiac_Load(object sender, EventArgs e)
         {
             string miesiacNazwa = "";
