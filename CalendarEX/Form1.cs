@@ -235,7 +235,7 @@ namespace CalendarEX
 
             wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
             wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
-
+            wydarzenie.WylaczAkcjeKlikniecia();
             wydarzenie.Width = Styczen_lista.Width - 6;
 
 
@@ -336,7 +336,7 @@ namespace CalendarEX
                 wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa);
                 wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
                 wydarzenie.Width = Nadchodzace_lista.Width - 6;
-
+                wydarzenie.WylaczAkcjeKlikniecia();
                 Nadchodzace_lista.Controls.Add(wydarzenie);
             }
             else if (czyWazne == 1)
@@ -347,7 +347,7 @@ namespace CalendarEX
                 wydarzenie.UstawTekst(dzien.ToString() + "." + miesiac.ToString() + " : " + nazwa);
                 wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
                 wydarzenie.Width = Najwazniejsze_lista.Width - 6;
-
+                wydarzenie.WylaczAkcjeKlikniecia();
                 Najwazniejsze_lista.Controls.Add(wydarzenie);
             }
             

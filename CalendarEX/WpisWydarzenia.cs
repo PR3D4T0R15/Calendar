@@ -25,6 +25,11 @@ namespace CalendarEX
             WpisWydarzenia_tekst.Text = tekst;
         }
 
+        public void WylaczAkcjeKlikniecia()
+        {
+            WpisWydarzenia_tekst.Click -= WpisWydarzenia_tekst_Click;
+        }
+
         private void WpisWydarzenia_Click(object sender, EventArgs e)
         {
             UsuwanieWydarzenia();
