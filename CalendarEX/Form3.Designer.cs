@@ -103,6 +103,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OknoNotatki";
             this.Text = "Notatki";
+            this.Load += new System.EventHandler(this.OknoNotatki_Load);
             this.OknoNotatki_Podzial.ResumeLayout(false);
             this.OknoNotatki_Podzial.PerformLayout();
             this.Podzial_Przyciski.ResumeLayout(false);

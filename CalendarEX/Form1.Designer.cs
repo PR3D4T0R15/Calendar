@@ -818,6 +818,7 @@
             // 
             // Notatki_pole
             // 
+            this.Notatki_pole.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Notatki_pole.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Notatki_pole.Location = new System.Drawing.Point(1, 35);
             this.Notatki_pole.Margin = new System.Windows.Forms.Padding(0);

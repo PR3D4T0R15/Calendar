@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,6 +47,8 @@ namespace CalendarEX
 
             WyczyscListyWydarzenWazne();
             WczytajWydarzeniaWazne();
+
+            OdczytajDane();
 
         }
 
@@ -417,6 +420,22 @@ namespace CalendarEX
         {
             OknoNotatki OknoNotatki = new OknoNotatki();
             OknoNotatki.Show();
+        }
+
+        public void OdczytajDane()
+        {
+            string plik = "notatki.txt";
+
+            try
+            {
+                StreamReader plikR = new StreamReader(plik);
+                Notatki_pole.Text = plikR.ReadToEnd();
+                plikR.Close();
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                
+            }
         }
     }
 }
