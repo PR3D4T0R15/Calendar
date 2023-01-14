@@ -295,7 +295,7 @@ namespace CalendarEX
 
             SQLiteCommand pobranieDat = sqlitePolaczenie.CreateCommand();
             pobranieDat.CommandText = "SELECT dzien,nazwa FROM main.Wydarzenia WHERE miesiac = $miesiac AND dzien > $dzien AND rok=  $rok ORDER BY dzien ASC;";
-            pobranieDat.Parameters.AddWithValue("$miesiac", GlowneOkno.miesiac + 1);
+            pobranieDat.Parameters.AddWithValue("$miesiac", DateTime.Now.Month);
             pobranieDat.Parameters.AddWithValue("$dzien", GlowneOkno.dzien);
             pobranieDat.Parameters.AddWithValue("$rok", GlowneOkno.rok);
 
