@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//TWORZONE PRZEZ VISUAL STUDIO W TRAKCIE TWORZENIA PROJEKTU
 namespace CalendarEX //przestrzen nazw
 {
     internal static class Program //klasa Program

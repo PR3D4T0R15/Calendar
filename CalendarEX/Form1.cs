@@ -91,7 +91,7 @@ namespace CalendarEX
         //USTAWIENIE JAKI ROK MA BYC WYSWIETLONY W GLOWNYM OKNIE
         private void UstawRok() //funkcja UstawRok
         {
-            PanelRoku_rok.Text = rok.ToString();    //zamiana tekstu ROK na odpowiedni rok pobrany ze zmiennej int i wyswietlenie liczby jako ciag znakow string
+            PanelRoku_rok.Text = "ROK " + rok.ToString();    //zamiana tekstu ROK na odpowiedni rok pobrany ze zmiennej int i wyswietlenie liczby jako ciag znakow string
         }
 
         //FUNKCJA PRYWATNA KTORA URUCHAMIA NOWE OKNO PO KLIKNIECIU W MIESIAC STYCZEN
@@ -478,6 +478,11 @@ namespace CalendarEX
             {
                 
             }
+        }
+
+        private void PanelRoku_rok_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
