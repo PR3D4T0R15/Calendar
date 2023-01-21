@@ -1,18 +1,19 @@
-﻿using System;
+﻿//dodane biblioteki
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CalendarEX
+namespace CalendarEX //przestrzen nazw
 {
-    internal static class Program
+    internal static class Program //klasa Program
     {
         /// <summary>
         /// Główny punkt wejścia dla aplikacji.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main() //funkcja statyczna Main, tworzenie okna - aplikacja graficzna
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

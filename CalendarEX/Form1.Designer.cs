@@ -122,8 +122,8 @@
             // GlowneOkno_podzial.Panel2
             // 
             this.GlowneOkno_podzial.Panel2.Controls.Add(this.PanelGlowny);
-            this.GlowneOkno_podzial.Size = new System.Drawing.Size(1189, 810);
-            this.GlowneOkno_podzial.SplitterDistance = 52;
+            this.GlowneOkno_podzial.Size = new System.Drawing.Size(1189, 749);
+            this.GlowneOkno_podzial.SplitterDistance = 48;
             this.GlowneOkno_podzial.TabIndex = 0;
             // 
             // PanelRoku
@@ -142,7 +142,7 @@
             this.PanelRoku.Name = "PanelRoku";
             this.PanelRoku.RowCount = 1;
             this.PanelRoku.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.PanelRoku.Size = new System.Drawing.Size(1189, 52);
+            this.PanelRoku.Size = new System.Drawing.Size(1189, 48);
             this.PanelRoku.TabIndex = 0;
             // 
             // PanelRoku_rok
@@ -154,11 +154,10 @@
             this.PanelRoku_rok.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.PanelRoku_rok.Location = new System.Drawing.Point(182, 1);
             this.PanelRoku_rok.Name = "PanelRoku_rok";
-            this.PanelRoku_rok.Size = new System.Drawing.Size(823, 50);
+            this.PanelRoku_rok.Size = new System.Drawing.Size(823, 46);
             this.PanelRoku_rok.TabIndex = 0;
             this.PanelRoku_rok.Text = "ROK";
             this.PanelRoku_rok.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.PanelRoku_rok.Click += new System.EventHandler(this.PanelRoku_rok_Click);
             // 
             // PanelRoku_rokDoPrzodu
             // 
@@ -168,7 +167,7 @@
             this.PanelRoku_rokDoPrzodu.Location = new System.Drawing.Point(1009, 1);
             this.PanelRoku_rokDoPrzodu.Margin = new System.Windows.Forms.Padding(0);
             this.PanelRoku_rokDoPrzodu.Name = "PanelRoku_rokDoPrzodu";
-            this.PanelRoku_rokDoPrzodu.Size = new System.Drawing.Size(179, 50);
+            this.PanelRoku_rokDoPrzodu.Size = new System.Drawing.Size(179, 46);
             this.PanelRoku_rokDoPrzodu.TabIndex = 2;
             this.PanelRoku_rokDoPrzodu.Text = "NASTĘPNY";
             this.PanelRoku_rokDoPrzodu.UseVisualStyleBackColor = true;
@@ -180,7 +179,7 @@
             this.PanelRoku_rokDoTylu.Location = new System.Drawing.Point(1, 1);
             this.PanelRoku_rokDoTylu.Margin = new System.Windows.Forms.Padding(0);
             this.PanelRoku_rokDoTylu.Name = "PanelRoku_rokDoTylu";
-            this.PanelRoku_rokDoTylu.Size = new System.Drawing.Size(177, 50);
+            this.PanelRoku_rokDoTylu.Size = new System.Drawing.Size(177, 46);
             this.PanelRoku_rokDoTylu.TabIndex = 3;
             this.PanelRoku_rokDoTylu.Text = "POPRZEDNI";
             this.PanelRoku_rokDoTylu.UseVisualStyleBackColor = true;
@@ -200,7 +199,7 @@
             this.PanelGlowny.Name = "PanelGlowny";
             this.PanelGlowny.RowCount = 1;
             this.PanelGlowny.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.PanelGlowny.Size = new System.Drawing.Size(1189, 754);
+            this.PanelGlowny.Size = new System.Drawing.Size(1189, 697);
             this.PanelGlowny.TabIndex = 0;
             // 
             // PanelGlowny_Daty
@@ -219,7 +218,7 @@
             this.PanelGlowny_Daty.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.PanelGlowny_Daty.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.PanelGlowny_Daty.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.PanelGlowny_Daty.Size = new System.Drawing.Size(177, 752);
+            this.PanelGlowny_Daty.Size = new System.Drawing.Size(177, 695);
             this.PanelGlowny_Daty.TabIndex = 0;
             // 
             // Daty_Nadchodzace
@@ -236,7 +235,7 @@
             this.Daty_Nadchodzace.RowCount = 2;
             this.Daty_Nadchodzace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Daty_Nadchodzace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Daty_Nadchodzace.Size = new System.Drawing.Size(177, 263);
+            this.Daty_Nadchodzace.Size = new System.Drawing.Size(177, 243);
             this.Daty_Nadchodzace.TabIndex = 0;
             // 
             // Nadchodzace_tekst
@@ -245,7 +244,7 @@
             this.Nadchodzace_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Nadchodzace_tekst.Location = new System.Drawing.Point(4, 1);
             this.Nadchodzace_tekst.Name = "Nadchodzace_tekst";
-            this.Nadchodzace_tekst.Size = new System.Drawing.Size(169, 39);
+            this.Nadchodzace_tekst.Size = new System.Drawing.Size(169, 36);
             this.Nadchodzace_tekst.TabIndex = 0;
             this.Nadchodzace_tekst.Text = "NADCHODZĄCE WYDARZENIA";
             this.Nadchodzace_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -254,10 +253,10 @@
             // 
             this.Nadchodzace_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Nadchodzace_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Nadchodzace_lista.Location = new System.Drawing.Point(1, 41);
+            this.Nadchodzace_lista.Location = new System.Drawing.Point(1, 38);
             this.Nadchodzace_lista.Margin = new System.Windows.Forms.Padding(0);
             this.Nadchodzace_lista.Name = "Nadchodzace_lista";
-            this.Nadchodzace_lista.Size = new System.Drawing.Size(175, 221);
+            this.Nadchodzace_lista.Size = new System.Drawing.Size(175, 204);
             this.Nadchodzace_lista.TabIndex = 1;
             // 
             // Daty_Najwazniejsze
@@ -268,13 +267,13 @@
             this.Daty_Najwazniejsze.Controls.Add(this.Najwazniejsze_tekst, 0, 0);
             this.Daty_Najwazniejsze.Controls.Add(this.Najwazniejsze_lista, 0, 1);
             this.Daty_Najwazniejsze.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Daty_Najwazniejsze.Location = new System.Drawing.Point(0, 263);
+            this.Daty_Najwazniejsze.Location = new System.Drawing.Point(0, 243);
             this.Daty_Najwazniejsze.Margin = new System.Windows.Forms.Padding(0);
             this.Daty_Najwazniejsze.Name = "Daty_Najwazniejsze";
             this.Daty_Najwazniejsze.RowCount = 2;
             this.Daty_Najwazniejsze.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Daty_Najwazniejsze.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Daty_Najwazniejsze.Size = new System.Drawing.Size(177, 263);
+            this.Daty_Najwazniejsze.Size = new System.Drawing.Size(177, 243);
             this.Daty_Najwazniejsze.TabIndex = 1;
             // 
             // Najwazniejsze_tekst
@@ -283,7 +282,7 @@
             this.Najwazniejsze_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Najwazniejsze_tekst.Location = new System.Drawing.Point(4, 1);
             this.Najwazniejsze_tekst.Name = "Najwazniejsze_tekst";
-            this.Najwazniejsze_tekst.Size = new System.Drawing.Size(169, 39);
+            this.Najwazniejsze_tekst.Size = new System.Drawing.Size(169, 36);
             this.Najwazniejsze_tekst.TabIndex = 0;
             this.Najwazniejsze_tekst.Text = "NAJWAŻNIEJSZE DATY";
             this.Najwazniejsze_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -292,10 +291,10 @@
             // 
             this.Najwazniejsze_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Najwazniejsze_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Najwazniejsze_lista.Location = new System.Drawing.Point(1, 41);
+            this.Najwazniejsze_lista.Location = new System.Drawing.Point(1, 38);
             this.Najwazniejsze_lista.Margin = new System.Windows.Forms.Padding(0);
             this.Najwazniejsze_lista.Name = "Najwazniejsze_lista";
-            this.Najwazniejsze_lista.Size = new System.Drawing.Size(175, 221);
+            this.Najwazniejsze_lista.Size = new System.Drawing.Size(175, 204);
             this.Najwazniejsze_lista.TabIndex = 1;
             // 
             // Daty_Notatki
@@ -306,13 +305,13 @@
             this.Daty_Notatki.Controls.Add(this.Notatki_tekst, 0, 0);
             this.Daty_Notatki.Controls.Add(this.Notatki_pole, 0, 1);
             this.Daty_Notatki.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Daty_Notatki.Location = new System.Drawing.Point(0, 526);
+            this.Daty_Notatki.Location = new System.Drawing.Point(0, 486);
             this.Daty_Notatki.Margin = new System.Windows.Forms.Padding(0);
             this.Daty_Notatki.Name = "Daty_Notatki";
             this.Daty_Notatki.RowCount = 2;
             this.Daty_Notatki.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Daty_Notatki.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Daty_Notatki.Size = new System.Drawing.Size(177, 226);
+            this.Daty_Notatki.Size = new System.Drawing.Size(177, 209);
             this.Daty_Notatki.TabIndex = 2;
             // 
             // Notatki_tekst
@@ -321,7 +320,7 @@
             this.Notatki_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Notatki_tekst.Location = new System.Drawing.Point(4, 1);
             this.Notatki_tekst.Name = "Notatki_tekst";
-            this.Notatki_tekst.Size = new System.Drawing.Size(169, 33);
+            this.Notatki_tekst.Size = new System.Drawing.Size(169, 30);
             this.Notatki_tekst.TabIndex = 0;
             this.Notatki_tekst.Text = "NOTATKI";
             this.Notatki_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -331,13 +330,13 @@
             // 
             this.Notatki_pole.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Notatki_pole.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Notatki_pole.Location = new System.Drawing.Point(1, 35);
+            this.Notatki_pole.Location = new System.Drawing.Point(1, 32);
             this.Notatki_pole.Margin = new System.Windows.Forms.Padding(0);
             this.Notatki_pole.Multiline = true;
             this.Notatki_pole.Name = "Notatki_pole";
             this.Notatki_pole.ReadOnly = true;
             this.Notatki_pole.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Notatki_pole.Size = new System.Drawing.Size(175, 190);
+            this.Notatki_pole.Size = new System.Drawing.Size(175, 176);
             this.Notatki_pole.TabIndex = 1;
             // 
             // PanelGlowny_Miesiace
@@ -368,7 +367,7 @@
             this.PanelGlowny_Miesiace.RowCount = 2;
             this.PanelGlowny_Miesiace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.PanelGlowny_Miesiace.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.PanelGlowny_Miesiace.Size = new System.Drawing.Size(1009, 752);
+            this.PanelGlowny_Miesiace.Size = new System.Drawing.Size(1009, 695);
             this.PanelGlowny_Miesiace.TabIndex = 1;
             // 
             // Miesiace_Styczen
@@ -385,7 +384,7 @@
             this.Miesiace_Styczen.RowCount = 2;
             this.Miesiace_Styczen.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Styczen.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Styczen.Size = new System.Drawing.Size(168, 376);
+            this.Miesiace_Styczen.Size = new System.Drawing.Size(168, 347);
             this.Miesiace_Styczen.TabIndex = 0;
             // 
             // Styczen_tekst
@@ -394,7 +393,7 @@
             this.Styczen_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Styczen_tekst.Location = new System.Drawing.Point(4, 1);
             this.Styczen_tekst.Name = "Styczen_tekst";
-            this.Styczen_tekst.Size = new System.Drawing.Size(160, 55);
+            this.Styczen_tekst.Size = new System.Drawing.Size(160, 51);
             this.Styczen_tekst.TabIndex = 0;
             this.Styczen_tekst.Text = "styczeń";
             this.Styczen_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -404,9 +403,9 @@
             // 
             this.Styczen_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Styczen_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Styczen_lista.Location = new System.Drawing.Point(4, 60);
+            this.Styczen_lista.Location = new System.Drawing.Point(4, 56);
             this.Styczen_lista.Name = "Styczen_lista";
-            this.Styczen_lista.Size = new System.Drawing.Size(160, 312);
+            this.Styczen_lista.Size = new System.Drawing.Size(160, 287);
             this.Styczen_lista.TabIndex = 1;
             // 
             // Miesiace_Lipiec
@@ -417,13 +416,13 @@
             this.Miesiace_Lipiec.Controls.Add(this.Lipiec_tekst, 0, 0);
             this.Miesiace_Lipiec.Controls.Add(this.Lipiec_lista, 0, 1);
             this.Miesiace_Lipiec.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Miesiace_Lipiec.Location = new System.Drawing.Point(0, 376);
+            this.Miesiace_Lipiec.Location = new System.Drawing.Point(0, 347);
             this.Miesiace_Lipiec.Margin = new System.Windows.Forms.Padding(0);
             this.Miesiace_Lipiec.Name = "Miesiace_Lipiec";
             this.Miesiace_Lipiec.RowCount = 2;
             this.Miesiace_Lipiec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Lipiec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Lipiec.Size = new System.Drawing.Size(168, 376);
+            this.Miesiace_Lipiec.Size = new System.Drawing.Size(168, 348);
             this.Miesiace_Lipiec.TabIndex = 1;
             // 
             // Lipiec_tekst
@@ -432,7 +431,7 @@
             this.Lipiec_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Lipiec_tekst.Location = new System.Drawing.Point(4, 1);
             this.Lipiec_tekst.Name = "Lipiec_tekst";
-            this.Lipiec_tekst.Size = new System.Drawing.Size(160, 55);
+            this.Lipiec_tekst.Size = new System.Drawing.Size(160, 51);
             this.Lipiec_tekst.TabIndex = 0;
             this.Lipiec_tekst.Text = "lipiec";
             this.Lipiec_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -442,9 +441,9 @@
             // 
             this.Lipiec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Lipiec_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Lipiec_lista.Location = new System.Drawing.Point(4, 60);
+            this.Lipiec_lista.Location = new System.Drawing.Point(4, 56);
             this.Lipiec_lista.Name = "Lipiec_lista";
-            this.Lipiec_lista.Size = new System.Drawing.Size(160, 312);
+            this.Lipiec_lista.Size = new System.Drawing.Size(160, 288);
             this.Lipiec_lista.TabIndex = 1;
             // 
             // Miesiace_Luty
@@ -461,7 +460,7 @@
             this.Miesiace_Luty.RowCount = 2;
             this.Miesiace_Luty.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Luty.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Luty.Size = new System.Drawing.Size(168, 376);
+            this.Miesiace_Luty.Size = new System.Drawing.Size(168, 347);
             this.Miesiace_Luty.TabIndex = 2;
             // 
             // Luty_tekst
@@ -470,7 +469,7 @@
             this.Luty_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Luty_tekst.Location = new System.Drawing.Point(4, 1);
             this.Luty_tekst.Name = "Luty_tekst";
-            this.Luty_tekst.Size = new System.Drawing.Size(160, 55);
+            this.Luty_tekst.Size = new System.Drawing.Size(160, 51);
             this.Luty_tekst.TabIndex = 0;
             this.Luty_tekst.Text = "luty";
             this.Luty_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -480,9 +479,9 @@
             // 
             this.Luty_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Luty_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Luty_lista.Location = new System.Drawing.Point(4, 60);
+            this.Luty_lista.Location = new System.Drawing.Point(4, 56);
             this.Luty_lista.Name = "Luty_lista";
-            this.Luty_lista.Size = new System.Drawing.Size(160, 312);
+            this.Luty_lista.Size = new System.Drawing.Size(160, 287);
             this.Luty_lista.TabIndex = 1;
             // 
             // Miesiace_Sierpien
@@ -493,13 +492,13 @@
             this.Miesiace_Sierpien.Controls.Add(this.Sierpien_tekst, 0, 0);
             this.Miesiace_Sierpien.Controls.Add(this.Sierpien_lista, 0, 1);
             this.Miesiace_Sierpien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Miesiace_Sierpien.Location = new System.Drawing.Point(168, 376);
+            this.Miesiace_Sierpien.Location = new System.Drawing.Point(168, 347);
             this.Miesiace_Sierpien.Margin = new System.Windows.Forms.Padding(0);
             this.Miesiace_Sierpien.Name = "Miesiace_Sierpien";
             this.Miesiace_Sierpien.RowCount = 2;
             this.Miesiace_Sierpien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Sierpien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Sierpien.Size = new System.Drawing.Size(168, 376);
+            this.Miesiace_Sierpien.Size = new System.Drawing.Size(168, 348);
             this.Miesiace_Sierpien.TabIndex = 3;
             // 
             // Sierpien_tekst
@@ -508,7 +507,7 @@
             this.Sierpien_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Sierpien_tekst.Location = new System.Drawing.Point(4, 1);
             this.Sierpien_tekst.Name = "Sierpien_tekst";
-            this.Sierpien_tekst.Size = new System.Drawing.Size(160, 55);
+            this.Sierpien_tekst.Size = new System.Drawing.Size(160, 51);
             this.Sierpien_tekst.TabIndex = 0;
             this.Sierpien_tekst.Text = "sierpień";
             this.Sierpien_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -518,9 +517,9 @@
             // 
             this.Sierpien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Sierpien_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Sierpien_lista.Location = new System.Drawing.Point(4, 60);
+            this.Sierpien_lista.Location = new System.Drawing.Point(4, 56);
             this.Sierpien_lista.Name = "Sierpien_lista";
-            this.Sierpien_lista.Size = new System.Drawing.Size(160, 312);
+            this.Sierpien_lista.Size = new System.Drawing.Size(160, 288);
             this.Sierpien_lista.TabIndex = 1;
             // 
             // Miesiace_Marzec
@@ -537,7 +536,7 @@
             this.Miesiace_Marzec.RowCount = 2;
             this.Miesiace_Marzec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Marzec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Marzec.Size = new System.Drawing.Size(168, 376);
+            this.Miesiace_Marzec.Size = new System.Drawing.Size(168, 347);
             this.Miesiace_Marzec.TabIndex = 4;
             // 
             // Marzec_tekst
@@ -546,7 +545,7 @@
             this.Marzec_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Marzec_tekst.Location = new System.Drawing.Point(4, 1);
             this.Marzec_tekst.Name = "Marzec_tekst";
-            this.Marzec_tekst.Size = new System.Drawing.Size(160, 55);
+            this.Marzec_tekst.Size = new System.Drawing.Size(160, 51);
             this.Marzec_tekst.TabIndex = 0;
             this.Marzec_tekst.Text = "marzec";
             this.Marzec_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -556,9 +555,9 @@
             // 
             this.Marzec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Marzec_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Marzec_lista.Location = new System.Drawing.Point(4, 60);
+            this.Marzec_lista.Location = new System.Drawing.Point(4, 56);
             this.Marzec_lista.Name = "Marzec_lista";
-            this.Marzec_lista.Size = new System.Drawing.Size(160, 312);
+            this.Marzec_lista.Size = new System.Drawing.Size(160, 287);
             this.Marzec_lista.TabIndex = 1;
             // 
             // Miesiace_Wrzesien
@@ -569,13 +568,13 @@
             this.Miesiace_Wrzesien.Controls.Add(this.Wrzesien_tekst, 0, 0);
             this.Miesiace_Wrzesien.Controls.Add(this.Wrzesien_lista, 0, 1);
             this.Miesiace_Wrzesien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Miesiace_Wrzesien.Location = new System.Drawing.Point(336, 376);
+            this.Miesiace_Wrzesien.Location = new System.Drawing.Point(336, 347);
             this.Miesiace_Wrzesien.Margin = new System.Windows.Forms.Padding(0);
             this.Miesiace_Wrzesien.Name = "Miesiace_Wrzesien";
             this.Miesiace_Wrzesien.RowCount = 2;
             this.Miesiace_Wrzesien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Wrzesien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Wrzesien.Size = new System.Drawing.Size(168, 376);
+            this.Miesiace_Wrzesien.Size = new System.Drawing.Size(168, 348);
             this.Miesiace_Wrzesien.TabIndex = 5;
             // 
             // Wrzesien_tekst
@@ -584,7 +583,7 @@
             this.Wrzesien_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrzesien_tekst.Location = new System.Drawing.Point(4, 1);
             this.Wrzesien_tekst.Name = "Wrzesien_tekst";
-            this.Wrzesien_tekst.Size = new System.Drawing.Size(160, 55);
+            this.Wrzesien_tekst.Size = new System.Drawing.Size(160, 51);
             this.Wrzesien_tekst.TabIndex = 0;
             this.Wrzesien_tekst.Text = "wrzesień";
             this.Wrzesien_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -594,9 +593,9 @@
             // 
             this.Wrzesien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Wrzesien_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Wrzesien_lista.Location = new System.Drawing.Point(4, 60);
+            this.Wrzesien_lista.Location = new System.Drawing.Point(4, 56);
             this.Wrzesien_lista.Name = "Wrzesien_lista";
-            this.Wrzesien_lista.Size = new System.Drawing.Size(160, 312);
+            this.Wrzesien_lista.Size = new System.Drawing.Size(160, 288);
             this.Wrzesien_lista.TabIndex = 1;
             // 
             // Miesiace_Kwiecien
@@ -613,7 +612,7 @@
             this.Miesiace_Kwiecien.RowCount = 2;
             this.Miesiace_Kwiecien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Kwiecien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Kwiecien.Size = new System.Drawing.Size(168, 376);
+            this.Miesiace_Kwiecien.Size = new System.Drawing.Size(168, 347);
             this.Miesiace_Kwiecien.TabIndex = 6;
             // 
             // Kwiecien_tekst
@@ -622,7 +621,7 @@
             this.Kwiecien_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Kwiecien_tekst.Location = new System.Drawing.Point(4, 1);
             this.Kwiecien_tekst.Name = "Kwiecien_tekst";
-            this.Kwiecien_tekst.Size = new System.Drawing.Size(160, 55);
+            this.Kwiecien_tekst.Size = new System.Drawing.Size(160, 51);
             this.Kwiecien_tekst.TabIndex = 0;
             this.Kwiecien_tekst.Text = "kwiecień";
             this.Kwiecien_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -632,9 +631,9 @@
             // 
             this.Kwiecien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Kwiecien_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Kwiecien_lista.Location = new System.Drawing.Point(4, 60);
+            this.Kwiecien_lista.Location = new System.Drawing.Point(4, 56);
             this.Kwiecien_lista.Name = "Kwiecien_lista";
-            this.Kwiecien_lista.Size = new System.Drawing.Size(160, 312);
+            this.Kwiecien_lista.Size = new System.Drawing.Size(160, 287);
             this.Kwiecien_lista.TabIndex = 1;
             // 
             // Miesiace_Pazdziernik
@@ -645,22 +644,22 @@
             this.Miesiace_Pazdziernik.Controls.Add(this.Pazdziernik_lista, 0, 1);
             this.Miesiace_Pazdziernik.Controls.Add(this.Pazdziernik_tekst, 0, 0);
             this.Miesiace_Pazdziernik.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Miesiace_Pazdziernik.Location = new System.Drawing.Point(504, 376);
+            this.Miesiace_Pazdziernik.Location = new System.Drawing.Point(504, 347);
             this.Miesiace_Pazdziernik.Margin = new System.Windows.Forms.Padding(0);
             this.Miesiace_Pazdziernik.Name = "Miesiace_Pazdziernik";
             this.Miesiace_Pazdziernik.RowCount = 2;
             this.Miesiace_Pazdziernik.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Pazdziernik.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Pazdziernik.Size = new System.Drawing.Size(168, 376);
+            this.Miesiace_Pazdziernik.Size = new System.Drawing.Size(168, 348);
             this.Miesiace_Pazdziernik.TabIndex = 7;
             // 
             // Pazdziernik_lista
             // 
             this.Pazdziernik_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pazdziernik_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Pazdziernik_lista.Location = new System.Drawing.Point(4, 60);
+            this.Pazdziernik_lista.Location = new System.Drawing.Point(4, 56);
             this.Pazdziernik_lista.Name = "Pazdziernik_lista";
-            this.Pazdziernik_lista.Size = new System.Drawing.Size(160, 312);
+            this.Pazdziernik_lista.Size = new System.Drawing.Size(160, 288);
             this.Pazdziernik_lista.TabIndex = 1;
             // 
             // Pazdziernik_tekst
@@ -669,7 +668,7 @@
             this.Pazdziernik_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Pazdziernik_tekst.Location = new System.Drawing.Point(4, 1);
             this.Pazdziernik_tekst.Name = "Pazdziernik_tekst";
-            this.Pazdziernik_tekst.Size = new System.Drawing.Size(160, 55);
+            this.Pazdziernik_tekst.Size = new System.Drawing.Size(160, 51);
             this.Pazdziernik_tekst.TabIndex = 2;
             this.Pazdziernik_tekst.Text = "październik";
             this.Pazdziernik_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -689,7 +688,7 @@
             this.Miesiace_Maj.RowCount = 2;
             this.Miesiace_Maj.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Maj.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Maj.Size = new System.Drawing.Size(168, 376);
+            this.Miesiace_Maj.Size = new System.Drawing.Size(168, 347);
             this.Miesiace_Maj.TabIndex = 8;
             // 
             // Maj_tekst
@@ -698,7 +697,7 @@
             this.Maj_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Maj_tekst.Location = new System.Drawing.Point(4, 1);
             this.Maj_tekst.Name = "Maj_tekst";
-            this.Maj_tekst.Size = new System.Drawing.Size(160, 55);
+            this.Maj_tekst.Size = new System.Drawing.Size(160, 51);
             this.Maj_tekst.TabIndex = 0;
             this.Maj_tekst.Text = "maj";
             this.Maj_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -708,9 +707,9 @@
             // 
             this.Maj_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Maj_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Maj_lista.Location = new System.Drawing.Point(4, 60);
+            this.Maj_lista.Location = new System.Drawing.Point(4, 56);
             this.Maj_lista.Name = "Maj_lista";
-            this.Maj_lista.Size = new System.Drawing.Size(160, 312);
+            this.Maj_lista.Size = new System.Drawing.Size(160, 287);
             this.Maj_lista.TabIndex = 1;
             // 
             // Miesiace_Listopad
@@ -721,13 +720,13 @@
             this.Miesiace_Listopad.Controls.Add(this.Listopad_tekst, 0, 0);
             this.Miesiace_Listopad.Controls.Add(this.Listopad_lista, 0, 1);
             this.Miesiace_Listopad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Miesiace_Listopad.Location = new System.Drawing.Point(672, 376);
+            this.Miesiace_Listopad.Location = new System.Drawing.Point(672, 347);
             this.Miesiace_Listopad.Margin = new System.Windows.Forms.Padding(0);
             this.Miesiace_Listopad.Name = "Miesiace_Listopad";
             this.Miesiace_Listopad.RowCount = 2;
             this.Miesiace_Listopad.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Listopad.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Listopad.Size = new System.Drawing.Size(168, 376);
+            this.Miesiace_Listopad.Size = new System.Drawing.Size(168, 348);
             this.Miesiace_Listopad.TabIndex = 9;
             // 
             // Listopad_tekst
@@ -736,7 +735,7 @@
             this.Listopad_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Listopad_tekst.Location = new System.Drawing.Point(4, 1);
             this.Listopad_tekst.Name = "Listopad_tekst";
-            this.Listopad_tekst.Size = new System.Drawing.Size(160, 55);
+            this.Listopad_tekst.Size = new System.Drawing.Size(160, 51);
             this.Listopad_tekst.TabIndex = 0;
             this.Listopad_tekst.Text = "listopad";
             this.Listopad_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -746,9 +745,9 @@
             // 
             this.Listopad_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Listopad_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Listopad_lista.Location = new System.Drawing.Point(4, 60);
+            this.Listopad_lista.Location = new System.Drawing.Point(4, 56);
             this.Listopad_lista.Name = "Listopad_lista";
-            this.Listopad_lista.Size = new System.Drawing.Size(160, 312);
+            this.Listopad_lista.Size = new System.Drawing.Size(160, 288);
             this.Listopad_lista.TabIndex = 1;
             // 
             // Miesiace_Czerwiec
@@ -765,7 +764,7 @@
             this.Miesiace_Czerwiec.RowCount = 2;
             this.Miesiace_Czerwiec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Czerwiec.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Czerwiec.Size = new System.Drawing.Size(169, 376);
+            this.Miesiace_Czerwiec.Size = new System.Drawing.Size(169, 347);
             this.Miesiace_Czerwiec.TabIndex = 10;
             // 
             // Czerwiec_tekst
@@ -774,7 +773,7 @@
             this.Czerwiec_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Czerwiec_tekst.Location = new System.Drawing.Point(4, 1);
             this.Czerwiec_tekst.Name = "Czerwiec_tekst";
-            this.Czerwiec_tekst.Size = new System.Drawing.Size(161, 55);
+            this.Czerwiec_tekst.Size = new System.Drawing.Size(161, 51);
             this.Czerwiec_tekst.TabIndex = 0;
             this.Czerwiec_tekst.Text = "czerwiec";
             this.Czerwiec_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -784,9 +783,9 @@
             // 
             this.Czerwiec_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Czerwiec_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Czerwiec_lista.Location = new System.Drawing.Point(4, 60);
+            this.Czerwiec_lista.Location = new System.Drawing.Point(4, 56);
             this.Czerwiec_lista.Name = "Czerwiec_lista";
-            this.Czerwiec_lista.Size = new System.Drawing.Size(161, 312);
+            this.Czerwiec_lista.Size = new System.Drawing.Size(161, 287);
             this.Czerwiec_lista.TabIndex = 1;
             // 
             // Miesiace_Grudzien
@@ -797,13 +796,13 @@
             this.Miesiace_Grudzien.Controls.Add(this.Grudzien_tekst, 0, 0);
             this.Miesiace_Grudzien.Controls.Add(this.Grudzien_lista, 0, 1);
             this.Miesiace_Grudzien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Miesiace_Grudzien.Location = new System.Drawing.Point(840, 376);
+            this.Miesiace_Grudzien.Location = new System.Drawing.Point(840, 347);
             this.Miesiace_Grudzien.Margin = new System.Windows.Forms.Padding(0);
             this.Miesiace_Grudzien.Name = "Miesiace_Grudzien";
             this.Miesiace_Grudzien.RowCount = 2;
             this.Miesiace_Grudzien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.Miesiace_Grudzien.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.Miesiace_Grudzien.Size = new System.Drawing.Size(169, 376);
+            this.Miesiace_Grudzien.Size = new System.Drawing.Size(169, 348);
             this.Miesiace_Grudzien.TabIndex = 11;
             // 
             // Grudzien_tekst
@@ -812,7 +811,7 @@
             this.Grudzien_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grudzien_tekst.Location = new System.Drawing.Point(4, 1);
             this.Grudzien_tekst.Name = "Grudzien_tekst";
-            this.Grudzien_tekst.Size = new System.Drawing.Size(161, 55);
+            this.Grudzien_tekst.Size = new System.Drawing.Size(161, 51);
             this.Grudzien_tekst.TabIndex = 0;
             this.Grudzien_tekst.Text = "grudzień";
             this.Grudzien_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -822,16 +821,16 @@
             // 
             this.Grudzien_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Grudzien_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.Grudzien_lista.Location = new System.Drawing.Point(4, 60);
+            this.Grudzien_lista.Location = new System.Drawing.Point(4, 56);
             this.Grudzien_lista.Name = "Grudzien_lista";
-            this.Grudzien_lista.Size = new System.Drawing.Size(161, 312);
+            this.Grudzien_lista.Size = new System.Drawing.Size(161, 288);
             this.Grudzien_lista.TabIndex = 1;
             // 
             // GlowneOkno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1189, 810);
+            this.ClientSize = new System.Drawing.Size(1189, 749);
             this.Controls.Add(this.GlowneOkno_podzial);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GlowneOkno";

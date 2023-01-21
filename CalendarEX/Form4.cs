@@ -24,7 +24,7 @@ namespace CalendarEX
         {
             DodajWpisyTerminarza();
             this.Hide();
-            GlowneOkno.uchwytGlowneOkno.AktualzujWydarzenia();
+            GlowneOkno.uchwytGlowneOkno.AktualizujWydarzenia();
             OknoMiesiac.uchwytOknoMiesiac.AktualizujWydarzenia();
         }
 

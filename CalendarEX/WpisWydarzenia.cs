@@ -88,7 +88,7 @@ namespace CalendarEX
         private void WpisWydarzenia_tekst_Click(object sender, EventArgs e)
         {
             UsuwanieWydarzenia();
-            GlowneOkno.uchwytGlowneOkno.AktualzujWydarzenia();
+            GlowneOkno.uchwytGlowneOkno.AktualizujWydarzenia();
             OknoMiesiac.uchwytOknoMiesiac.AktualizujWydarzenia();
         }
     }

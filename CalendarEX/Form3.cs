@@ -28,7 +28,7 @@ namespace CalendarEX
         {
             ZapiszDane();
             this.Hide();
-            GlowneOkno.uchwytGlowneOkno.OdczytajDane();
+            GlowneOkno.uchwytGlowneOkno.WczytajNotatki();
         }
 
         private void Przyciski_anuluj_Click(object sender, EventArgs e)
