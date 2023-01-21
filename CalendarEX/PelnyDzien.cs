@@ -1,4 +1,5 @@
-﻿using System;
+﻿//BIBLIOTEKI
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,72 +12,83 @@ using System.Windows.Forms;
 
 namespace CalendarEX
 {
-    public partial class PelnyDzien : UserControl
+    public partial class PelnyDzien : UserControl //Klasa PelnyDzien dziedziczaca atrybuty i metody po klasie UserControl
     {
-        public PelnyDzien()
+        public PelnyDzien() //konstruktor klasy
         {
-            InitializeComponent();
+            InitializeComponent(); //zrobione przez visual
         }
 
-        public void UstawNumerDnia(int numer)
+        //FUNKCJA USTAWIAJACA NUMER POSZCZEGOLNEGO DNIA W MIESIACU
+        public void UstawNumerDnia(int numer) 
         {
-            NumerDnia.Text = numer.ToString();
+            NumerDnia.Text = numer.ToString(); //wyswietlenie numeru dnia w kontrolce dnia jako string
         }
 
+        //FUNKCJA OBSLUGUJACA KLIKNIECIE NA KONKRETNY DZIEN
         private void NumerDnia_Click(object sender, EventArgs e)
         {
-            int numerDnia = Convert.ToInt16(NumerDnia.Text);
+            int numerDnia = Convert.ToInt16(NumerDnia.Text); //pobranie numeru dnia z pola przechowujacego numer dnia
             
-            OknoNoweWydarzenie oknoWydarzenie = new OknoNoweWydarzenie();
+            OknoNoweWydarzenie oknoWydarzenie = new OknoNoweWydarzenie(); //wyswietlenie okna gdzie mozna wpisac nowe wydarzenie
 
-            oknoWydarzenie.UstawDomyslnaDate(numerDnia, GlowneOkno.miesiac, GlowneOkno.rok);
+            oknoWydarzenie.UstawDomyslnaDate(numerDnia, GlowneOkno.miesiac, GlowneOkno.rok); //ustawienie domyslnej daty w oknie wpisania daty
 
-            oknoWydarzenie.Show();
+            oknoWydarzenie.Show(); //wyswietlenie okna
         }
 
+        //FUNKCJA WCZYTUJACA WYDARZENIA DNIA
         private void WczytajWydarzeniaDnia(int wybranyDzien)
         {
-            //obiekt nowego polaczenia do bazy danych
+            //POLACZENIE Z BAZA DANYCH
             SQLiteConnection sqlitePolaczenie = new SQLiteConnection("Data Source=dane.sqlite;Version=3;New=False;Compress=True");
-            //proba podlaczenia do bazy danych
+            //PROBA POLACZENIA Z BAZA DANYCH
             try
             {
                 sqlitePolaczenie.Open();
             }
             catch { }
 
-            SQLiteCommand pobranieDat = sqlitePolaczenie.CreateCommand();
+            SQLiteCommand pobranieDat = sqlitePolaczenie.CreateCommand(); //tworzenie zmiennej ktora bedzie przechowywac zapytanie do bazy danych
+            //wpisanie zapytania
             pobranieDat.CommandText = "SELECT nazwa FROM main.Wydarzenia WHERE dzien = $dzien AND miesiac = $miesiac AND rok = $rok ORDER BY id ASC;";
+            //zamiana $miesiac na nazwe ktora uzytkownik wpisze i wybierze
             pobranieDat.Parameters.AddWithValue("$miesiac", GlowneOkno.miesiac);
             pobranieDat.Parameters.AddWithValue("$dzien", wybranyDzien);
             pobranieDat.Parameters.AddWithValue("$rok", GlowneOkno.rok);
 
-            SQLiteDataReader wynik = pobranieDat.ExecuteReader();
-            while (wynik.Read())
+            SQLiteDataReader wynik = pobranieDat.ExecuteReader(); //wykonanie zapytania
+            while (wynik.Read()) //przetworzenie zwroconego zapytania
             {
-                string nazwa = wynik.GetString(0);
+                string nazwa = wynik.GetString(0); //pobranie z wyniku zapytania nazwy wydarzenia
 
-                DodajWydarzenieDoListy(nazwa, wybranyDzien);
+                DodajWydarzenieDoListy(nazwa, wybranyDzien); //funkcja obslugujaca wrzucenie wydarzenia do listy
             }
 
-            sqlitePolaczenie.Close();
+            sqlitePolaczenie.Close(); //zamkniecie polaczenia
         }
 
+        //FUNKCJA OBSLUGUJACA DODANIE WYDARZENIA DO LISTY
         private void DodajWydarzenieDoListy(string nazwa, int dzien)
         {
+            //utworzenie napisu z wydarzeniem/utworzenie nowego wpisu (kafelka) w konkretny miesiac
             WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
-            wydarzenie.UstawTekst(nazwa);
-            wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
+            wydarzenie.UstawTekst(nazwa);//ustawienie tekstu tego wydarzenia
+            //utworzenie nazwy tego wydarzenia
+            wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa; 
+            //zmiana szerokosci kafelka
             wydarzenie.Width = ZadaniaDnia.Width - 8;
 
+            //dodanie wydarzenia zeby pojawilo sie w kafelku danego dnia w miesiacu
             ZadaniaDnia.Controls.Add(wydarzenie);
         }
 
+        //FUNKCJA WPISUJACA WYDARZENIA DO DNIA
         private void NumerDnia_TextChanged(object sender, EventArgs e)
         {
-            int numerDnia = Convert.ToInt16(NumerDnia.Text);
-            WczytajWydarzeniaDnia(numerDnia);
+            int numerDnia = Convert.ToInt16(NumerDnia.Text); //pobranie numeru dnia kafelka
+            WczytajWydarzeniaDnia(numerDnia); //wpisanie wydarzen
         }
 
 

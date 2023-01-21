@@ -150,7 +150,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelRoku_rok.AutoSize = true;
-            this.PanelRoku_rok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(224)))), ((int)(((byte)(184)))));
+            this.PanelRoku_rok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(169)))), ((int)(((byte)(214)))));
             this.PanelRoku_rok.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.PanelRoku_rok.Location = new System.Drawing.Point(164, 3);
             this.PanelRoku_rok.Margin = new System.Windows.Forms.Padding(3);
@@ -166,7 +166,8 @@
             this.PanelRoku_rokDoPrzodu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelRoku_rokDoPrzodu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PanelRoku_rokDoPrzodu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(163)))), ((int)(((byte)(218)))));
+            this.PanelRoku_rokDoPrzodu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.PanelRoku_rokDoPrzodu.Location = new System.Drawing.Point(913, 0);
             this.PanelRoku_rokDoPrzodu.Margin = new System.Windows.Forms.Padding(0);
             this.PanelRoku_rokDoPrzodu.Name = "PanelRoku_rokDoPrzodu";
@@ -178,8 +179,9 @@
             // 
             // PanelRoku_rokDoTylu
             // 
-            this.PanelRoku_rokDoTylu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PanelRoku_rokDoTylu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(163)))), ((int)(((byte)(218)))));
             this.PanelRoku_rokDoTylu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelRoku_rokDoTylu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.PanelRoku_rokDoTylu.Location = new System.Drawing.Point(0, 0);
             this.PanelRoku_rokDoTylu.Margin = new System.Windows.Forms.Padding(0);
             this.PanelRoku_rokDoTylu.Name = "PanelRoku_rokDoTylu";
@@ -245,17 +247,20 @@
             // Nadchodzace_tekst
             // 
             this.Nadchodzace_tekst.AutoSize = true;
+            this.Nadchodzace_tekst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
             this.Nadchodzace_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Nadchodzace_tekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Nadchodzace_tekst.Location = new System.Drawing.Point(4, 1);
+            this.Nadchodzace_tekst.Location = new System.Drawing.Point(1, 1);
+            this.Nadchodzace_tekst.Margin = new System.Windows.Forms.Padding(0);
             this.Nadchodzace_tekst.Name = "Nadchodzace_tekst";
-            this.Nadchodzace_tekst.Size = new System.Drawing.Size(152, 27);
+            this.Nadchodzace_tekst.Size = new System.Drawing.Size(158, 27);
             this.Nadchodzace_tekst.TabIndex = 0;
             this.Nadchodzace_tekst.Text = "NADCHODZĄCE WYDARZENIA";
             this.Nadchodzace_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Nadchodzace_lista
             // 
+            this.Nadchodzace_lista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(225)))), ((int)(((byte)(231)))));
             this.Nadchodzace_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Nadchodzace_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Nadchodzace_lista.Location = new System.Drawing.Point(1, 29);
@@ -284,17 +289,20 @@
             // Najwazniejsze_tekst
             // 
             this.Najwazniejsze_tekst.AutoSize = true;
+            this.Najwazniejsze_tekst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
             this.Najwazniejsze_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Najwazniejsze_tekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Najwazniejsze_tekst.Location = new System.Drawing.Point(4, 1);
+            this.Najwazniejsze_tekst.Location = new System.Drawing.Point(1, 1);
+            this.Najwazniejsze_tekst.Margin = new System.Windows.Forms.Padding(0);
             this.Najwazniejsze_tekst.Name = "Najwazniejsze_tekst";
-            this.Najwazniejsze_tekst.Size = new System.Drawing.Size(152, 27);
+            this.Najwazniejsze_tekst.Size = new System.Drawing.Size(158, 27);
             this.Najwazniejsze_tekst.TabIndex = 0;
             this.Najwazniejsze_tekst.Text = "NAJWAŻNIEJSZE DATY";
             this.Najwazniejsze_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Najwazniejsze_lista
             // 
+            this.Najwazniejsze_lista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(225)))), ((int)(((byte)(231)))));
             this.Najwazniejsze_lista.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Najwazniejsze_lista.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.Najwazniejsze_lista.Location = new System.Drawing.Point(1, 29);
@@ -323,11 +331,13 @@
             // Notatki_tekst
             // 
             this.Notatki_tekst.AutoSize = true;
+            this.Notatki_tekst.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
             this.Notatki_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Notatki_tekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Notatki_tekst.Location = new System.Drawing.Point(4, 1);
+            this.Notatki_tekst.Location = new System.Drawing.Point(1, 1);
+            this.Notatki_tekst.Margin = new System.Windows.Forms.Padding(0);
             this.Notatki_tekst.Name = "Notatki_tekst";
-            this.Notatki_tekst.Size = new System.Drawing.Size(152, 24);
+            this.Notatki_tekst.Size = new System.Drawing.Size(158, 24);
             this.Notatki_tekst.TabIndex = 0;
             this.Notatki_tekst.Text = "NOTATKI";
             this.Notatki_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -335,6 +345,7 @@
             // 
             // Notatki_pole
             // 
+            this.Notatki_pole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(225)))), ((int)(((byte)(231)))));
             this.Notatki_pole.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Notatki_pole.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Notatki_pole.Location = new System.Drawing.Point(1, 26);
@@ -897,6 +908,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1075, 580);
             this.Controls.Add(this.GlowneOkno_podzial);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

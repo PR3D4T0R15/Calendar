@@ -19,7 +19,7 @@ namespace CalendarEX
 
         public OknoMiesiac()    //konstruktor klasy 
         {
-            InitializeComponent();  //zaladowanie okna
+            InitializeComponent();  //zaladowanie okna, zrobione przez visual
             uchwytOknoMiesiac = this;   //przypisujemy do zmienne uchwytGLowneOkno klase GlowneOKno
         }
 
