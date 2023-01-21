@@ -10,28 +10,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CalendarEX
 {
-    public partial class OknoMiesiac : Form
+    public partial class OknoMiesiac : Form //Klasa OknoMiesiac dziedziczaca atrybuty i metody po klasie Form
     {
-        public static OknoMiesiac uchwytOknoMiesiac;
+        public static OknoMiesiac uchwytOknoMiesiac; //deklaracja zmiennej wskazujaca na klase OknoMiesiac
 
-        public OknoMiesiac()
+        public OknoMiesiac()    //konstruktor klasy 
         {
-            InitializeComponent();
-            uchwytOknoMiesiac = this;
+            InitializeComponent();  //zaladowanie okna
+            uchwytOknoMiesiac = this;   //przypisujemy do zmienne uchwytGLowneOkno klase GlowneOKno
         }
 
+        //FUNKCJA WYKONUJACA SIE GDY OKNO JEST ZALADOWANE
         private void OknoMiesiac_Load(object sender, EventArgs e)
         {
-            string miesiacNazwa = "";
+            string miesiacNazwa = ""; //zmienna przechowujaca nazwe miesiaca
 
-            switch(GlowneOkno.miesiac)
+            switch(GlowneOkno.miesiac) //przelacznik sluzacy do zaladowania odpowiedniego obrazka przypisanego do konkretnego miesiaca
             {
                 case 0:
-                    miesiacNazwa = "ERROR";
+                    miesiacNazwa = "ERROR"; //obsluga bledu jak cos sie nie zaladuje
                     break;
-                case 1:
+                case 1: //przypadek 1 - jak wybrany zostanie miesiac styczen to zaladuje sie obrazek przypisany do miesiaca styczen
                     miesiacNazwa = "styczeń";
                     PodzialTytul_obraz.Image = CalendarEX.img.styczen;
                     break; 
@@ -81,23 +83,24 @@ namespace CalendarEX
                     break;
             }
 
-            PodzialTytul_tekst.Text = miesiacNazwa;
+            PodzialTytul_tekst.Text = miesiacNazwa; //ustawienie nazwy miesiaca w oknie
 
-            WyswietlKalendarz();
+            WyswietlKalendarz(); //wyswietlenie kalendarza - dni dla konkretnego miesiaca
         }
 
+        //FUNKCJA WYSWIETLAJACA KALENDARZ DLA WYBRANEGO MIESIACA
         private void WyswietlKalendarz()
         {
-            // pierwszy dzien wybranego miesiaca
-            DateTime aktualnyMiesiac = new DateTime(GlowneOkno.rok, GlowneOkno.miesiac, 1);
+            //ustawienie pierwszego dnia wybranego miesiaca (w jakim dniu tygodnia sie rozpoczyna)
+            DateTime pierwszyDzienMiesiaca = new DateTime(GlowneOkno.rok, GlowneOkno.miesiac, 1);
 
-            // liczba dni w miesiacu
+            //pobranie ile dni ma wybvrany miesiac
             int liczbaDniMiesiac = DateTime.DaysInMonth(GlowneOkno.rok, GlowneOkno.miesiac);
 
-            // pierwszy dzien wybranego miesiaca - jaki to jest dzien
-            string pierwszyDzienTygodniaMiesiac = aktualnyMiesiac.DayOfWeek.ToString();
+            //pobranie danej jaki to jest dzien - czy poniedzialek, wtorek, ...
+            string pierwszyDzienTygodniaMiesiac = pierwszyDzienMiesiaca.DayOfWeek.ToString();
 
-            //jaki to dzien tygodnia
+            //zmienna przechowujaca konkretne wartosci dla danego dnia tygodnia
             int numerPierwszyDzienMiesiac = 0;
 
             if(pierwszyDzienTygodniaMiesiac == "Monday")
@@ -129,37 +132,48 @@ namespace CalendarEX
                 numerPierwszyDzienMiesiac = 6;
             }
 
-            //wypelnienie pustych dni na początku kalendarza
+            //WYPELNIENIE PUSTYCH DNI NA POCZATKU KALENDARZA (PUSTE KAFELKI)
             for(int i = 0; i < numerPierwszyDzienMiesiac; i++)
             {
+                //tworzenie zmiennej przechowujacej kontrolke pustego dnia
                 PustyDzien pustaKontrolkaDni = new PustyDzien();
+                //dodanie kontrolki do listy dni
                 PodzialTygodni_kontrolkiDni.Controls.Add(pustaKontrolkaDni);
+                //ustawienie nazwy kontrolki
                 pustaKontrolkaDni.Name = "pusta_" + i.ToString();
 
+                //USTAWIENIE SZEROKOSCI I WYSOKOSCI KAFELKA
                 pustaKontrolkaDni.Width = (PodzialTygodni_kontrolkiDni.Width / 7) - 2;
                 pustaKontrolkaDni.Height = (PodzialTygodni_kontrolkiDni.Height / 6) - 2;
             }
 
-            //wypelnienie dni danego miesiaca
-            for(int i = 1; i <= liczbaDniMiesiac; i++)
+            //WYPELNIENIE DNI DANEGO MIESIACA
+            for(int i = 1; i <= liczbaDniMiesiac; i++) 
             {
+                //tworzenie ziennej przechowujacej kontrolke pelnego dnia
                 PelnyDzien kontrolkaDni = new PelnyDzien();
+                //dodanie kontrolki do listy dni
                 PodzialTygodni_kontrolkiDni.Controls.Add(kontrolkaDni);
+                //ustawienie numeru dnia
                 kontrolkaDni.UstawNumerDnia(i);
+                //ustawienie nazwy kontrolki
                 kontrolkaDni.Name = "dzien_" + i.ToString();
 
+                //USTAWIENIE SZEROKOSCI I WYSOKOSCI KAFELKA
                 kontrolkaDni.Width = (PodzialTygodni_kontrolkiDni.Width / 7) - 2;
                 kontrolkaDni.Height = (PodzialTygodni_kontrolkiDni.Height / 6) - 2;
             }
 
         }
 
+        //FUNKCJA WYSWIETLAJACA NA NOWO GLOWNE OKNO PO ZMIANIE ROZMIARU OKNA 
         private void OknoMiesiac_Resize(object sender, EventArgs e)
         {
             PodzialTygodni_kontrolkiDni.Controls.Clear();
             WyswietlKalendarz();
         }
 
+        //FUNKCJA AKTUALIZUJACA WYDARZENIA
         public void AktualizujWydarzenia()
         {
             PodzialTygodni_kontrolkiDni.Controls.Clear();
