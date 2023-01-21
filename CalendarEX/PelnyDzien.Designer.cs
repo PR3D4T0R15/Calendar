@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.ukladGlowny = new System.Windows.Forms.TableLayoutPanel();
-            this.NumerDnia = new System.Windows.Forms.Label();
             this.ZadaniaDnia = new System.Windows.Forms.FlowLayoutPanel();
+            this.NumerDnia = new System.Windows.Forms.Label();
             this.ukladGlowny.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,23 +50,10 @@
             this.ukladGlowny.Size = new System.Drawing.Size(159, 106);
             this.ukladGlowny.TabIndex = 0;
             // 
-            // NumerDnia
-            // 
-            this.NumerDnia.AutoSize = true;
-            this.NumerDnia.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NumerDnia.Location = new System.Drawing.Point(9, 0);
-            this.NumerDnia.Margin = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.NumerDnia.Name = "NumerDnia";
-            this.NumerDnia.Size = new System.Drawing.Size(150, 36);
-            this.NumerDnia.TabIndex = 0;
-            this.NumerDnia.Text = "label1";
-            this.NumerDnia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NumerDnia.TextChanged += new System.EventHandler(this.NumerDnia_TextChanged);
-            this.NumerDnia.Click += new System.EventHandler(this.NumerDnia_Click);
-            // 
             // ZadaniaDnia
             // 
             this.ZadaniaDnia.AutoScroll = true;
+            this.ZadaniaDnia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(231)))), ((int)(((byte)(151)))));
             this.ZadaniaDnia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ZadaniaDnia.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.ZadaniaDnia.Location = new System.Drawing.Point(0, 36);
@@ -74,6 +61,22 @@
             this.ZadaniaDnia.Name = "ZadaniaDnia";
             this.ZadaniaDnia.Size = new System.Drawing.Size(159, 70);
             this.ZadaniaDnia.TabIndex = 1;
+            // 
+            // NumerDnia
+            // 
+            this.NumerDnia.AutoSize = true;
+            this.NumerDnia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(231)))), ((int)(((byte)(151)))));
+            this.NumerDnia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NumerDnia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.NumerDnia.Location = new System.Drawing.Point(0, 0);
+            this.NumerDnia.Margin = new System.Windows.Forms.Padding(0);
+            this.NumerDnia.Name = "NumerDnia";
+            this.NumerDnia.Size = new System.Drawing.Size(159, 36);
+            this.NumerDnia.TabIndex = 0;
+            this.NumerDnia.Text = "label1";
+            this.NumerDnia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.NumerDnia.TextChanged += new System.EventHandler(this.NumerDnia_TextChanged);
+            this.NumerDnia.Click += new System.EventHandler(this.NumerDnia_Click);
             // 
             // PelnyDzien
             // 
@@ -94,7 +97,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel ukladGlowny;
-        private System.Windows.Forms.Label NumerDnia;
         private System.Windows.Forms.FlowLayoutPanel ZadaniaDnia;
+        private System.Windows.Forms.Label NumerDnia;
     }
 }

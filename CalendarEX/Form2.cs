@@ -34,51 +34,51 @@ namespace CalendarEX
                     miesiacNazwa = "ERROR"; //obsluga bledu jak cos sie nie zaladuje
                     break;
                 case 1: //przypadek 1 - jak wybrany zostanie miesiac styczen to zaladuje sie obrazek przypisany do miesiaca styczen
-                    miesiacNazwa = "styczeń";
+                    miesiacNazwa = "STYCZEŃ";
                     PodzialTytul_obraz.Image = CalendarEX.img.styczen;
                     break; 
                 case 2:
-                    miesiacNazwa = "luty";
+                    miesiacNazwa = "LUTY";
                     PodzialTytul_obraz.Image = CalendarEX.img.luty;
                     break;
                 case 3:
-                    miesiacNazwa = "marzec";
+                    miesiacNazwa = "MARZEC";
                     PodzialTytul_obraz.Image = CalendarEX.img.marzec;
                     break;
                 case 4:
-                    miesiacNazwa = "kwiecień";
+                    miesiacNazwa = "KWIECIEŃ";
                     PodzialTytul_obraz.Image = CalendarEX.img.kwiecien;
                     break;
                 case 5:
-                    miesiacNazwa = "maj";
+                    miesiacNazwa = "MAJ";
                     PodzialTytul_obraz.Image = CalendarEX.img.maj;
                     break;
                 case 6:
-                    miesiacNazwa = "czerwiec";
+                    miesiacNazwa = "CZERWIEC";
                     PodzialTytul_obraz.Image = CalendarEX.img.czerwiec;
                     break;
                 case 7:
-                    miesiacNazwa = "lipiec";
+                    miesiacNazwa = "LIPIEC";
                     PodzialTytul_obraz.Image = CalendarEX.img.lipiec;
                     break;
                 case 8:
-                    miesiacNazwa = "sierpień";
+                    miesiacNazwa = "SIERPIEŃ";
                     PodzialTytul_obraz.Image = CalendarEX.img.sierpien;
                     break;
                 case 9:
-                    miesiacNazwa = "wrzesień";
+                    miesiacNazwa = "WRZESIEŃ";
                     PodzialTytul_obraz.Image = CalendarEX.img.wrzesien;
                     break;
                 case 10:
-                    miesiacNazwa = "październik";
+                    miesiacNazwa = "PAŹDZIERNIK";
                     PodzialTytul_obraz.Image = CalendarEX.img.pazdziernik;
                     break;
                 case 11:
-                    miesiacNazwa = "listopad";
+                    miesiacNazwa = "LISTOPAD";
                     PodzialTytul_obraz.Image = CalendarEX.img.listopad;
                     break;
                 case 12:
-                    miesiacNazwa = "grudzień";
+                    miesiacNazwa = "GRUDZIEŃ";
                     PodzialTytul_obraz.Image = CalendarEX.img.grudzien;
                     break;
             }

@@ -56,6 +56,7 @@
             // PanelNotatek
             // 
             this.PanelNotatek.AcceptsTab = true;
+            this.PanelNotatek.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
             this.PanelNotatek.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelNotatek.Location = new System.Drawing.Point(3, 3);
             this.PanelNotatek.Multiline = true;
@@ -65,6 +66,7 @@
             // 
             // Podzial_Przyciski
             // 
+            this.Podzial_Przyciski.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(225)))), ((int)(((byte)(231)))));
             this.Podzial_Przyciski.Controls.Add(this.Przyciski_zapisz);
             this.Podzial_Przyciski.Controls.Add(this.Przyciski_anuluj);
             this.Podzial_Przyciski.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -76,22 +78,26 @@
             // 
             // Przyciski_zapisz
             // 
+            this.Przyciski_zapisz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
+            this.Przyciski_zapisz.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Przyciski_zapisz.Location = new System.Drawing.Point(716, 3);
             this.Przyciski_zapisz.Name = "Przyciski_zapisz";
             this.Przyciski_zapisz.Size = new System.Drawing.Size(75, 23);
             this.Przyciski_zapisz.TabIndex = 0;
             this.Przyciski_zapisz.Text = "ZAPISZ";
-            this.Przyciski_zapisz.UseVisualStyleBackColor = true;
+            this.Przyciski_zapisz.UseVisualStyleBackColor = false;
             this.Przyciski_zapisz.Click += new System.EventHandler(this.Przyciski_zapisz_Click);
             // 
             // Przyciski_anuluj
             // 
+            this.Przyciski_anuluj.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
+            this.Przyciski_anuluj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Przyciski_anuluj.Location = new System.Drawing.Point(635, 3);
             this.Przyciski_anuluj.Name = "Przyciski_anuluj";
             this.Przyciski_anuluj.Size = new System.Drawing.Size(75, 23);
             this.Przyciski_anuluj.TabIndex = 1;
             this.Przyciski_anuluj.Text = "ANULUJ";
-            this.Przyciski_anuluj.UseVisualStyleBackColor = true;
+            this.Przyciski_anuluj.UseVisualStyleBackColor = false;
             this.Przyciski_anuluj.Click += new System.EventHandler(this.Przyciski_anuluj_Click);
             // 
             // OknoNotatki

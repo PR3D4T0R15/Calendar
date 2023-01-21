@@ -151,6 +151,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelRoku_rok.AutoSize = true;
             this.PanelRoku_rok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(169)))), ((int)(((byte)(214)))));
+            this.PanelRoku_rok.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelRoku_rok.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.PanelRoku_rok.Location = new System.Drawing.Point(164, 3);
             this.PanelRoku_rok.Margin = new System.Windows.Forms.Padding(3);

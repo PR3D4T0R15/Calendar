@@ -84,18 +84,21 @@
             // 
             // Zapisz
             // 
+            this.Zapisz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(169)))), ((int)(((byte)(214)))));
+            this.Zapisz.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Zapisz.Location = new System.Drawing.Point(275, 3);
             this.Zapisz.Name = "Zapisz";
             this.Zapisz.Size = new System.Drawing.Size(75, 23);
             this.Zapisz.TabIndex = 0;
             this.Zapisz.Text = "ZAPISZ";
-            this.Zapisz.UseVisualStyleBackColor = true;
+            this.Zapisz.UseVisualStyleBackColor = false;
             this.Zapisz.Click += new System.EventHandler(this.Zapisz_Click);
             // 
             // NazwaWydarzenia_tytul
             // 
             this.NazwaWydarzenia_tytul.AutoSize = true;
             this.NazwaWydarzenia_tytul.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NazwaWydarzenia_tytul.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NazwaWydarzenia_tytul.Location = new System.Drawing.Point(9, 108);
             this.NazwaWydarzenia_tytul.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.NazwaWydarzenia_tytul.Name = "NazwaWydarzenia_tytul";
@@ -108,6 +111,7 @@
             // 
             this.Data_tytul.AutoSize = true;
             this.Data_tytul.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Data_tytul.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Data_tytul.Location = new System.Drawing.Point(9, 0);
             this.Data_tytul.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.Data_tytul.Name = "Data_tytul";
@@ -178,6 +182,7 @@
             // 
             this.CzyWazneWydarzenie.AutoSize = true;
             this.CzyWazneWydarzenie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CzyWazneWydarzenie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.CzyWazneWydarzenie.Location = new System.Drawing.Point(9, 81);
             this.CzyWazneWydarzenie.Margin = new System.Windows.Forms.Padding(9, 3, 9, 3);
             this.CzyWazneWydarzenie.Name = "CzyWazneWydarzenie";

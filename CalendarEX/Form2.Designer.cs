@@ -73,6 +73,8 @@
             // 
             // PodzialTytul
             // 
+            this.PodzialTytul.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(169)))), ((int)(((byte)(214)))));
+            this.PodzialTytul.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
             this.PodzialTytul.ColumnCount = 4;
             this.PodzialTytul.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.PodzialTytul.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
@@ -92,9 +94,10 @@
             // 
             this.PodzialTytul_tekst.AutoSize = true;
             this.PodzialTytul_tekst.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PodzialTytul_tekst.Location = new System.Drawing.Point(457, 0);
+            this.PodzialTytul_tekst.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PodzialTytul_tekst.Location = new System.Drawing.Point(457, 3);
             this.PodzialTytul_tekst.Name = "PodzialTytul_tekst";
-            this.PodzialTytul_tekst.Size = new System.Drawing.Size(164, 44);
+            this.PodzialTytul_tekst.Size = new System.Drawing.Size(162, 38);
             this.PodzialTytul_tekst.TabIndex = 0;
             this.PodzialTytul_tekst.Text = "MIESIĄC";
             this.PodzialTytul_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,9 +107,9 @@
             this.PodzialTytul_obraz.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PodzialTytul_obraz.Image = global::CalendarEX.img.styczen;
             this.PodzialTytul_obraz.InitialImage = global::CalendarEX.img.styczen;
-            this.PodzialTytul_obraz.Location = new System.Drawing.Point(627, 3);
+            this.PodzialTytul_obraz.Location = new System.Drawing.Point(628, 6);
             this.PodzialTytul_obraz.Name = "PodzialTytul_obraz";
-            this.PodzialTytul_obraz.Size = new System.Drawing.Size(50, 38);
+            this.PodzialTytul_obraz.Size = new System.Drawing.Size(50, 32);
             this.PodzialTytul_obraz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PodzialTytul_obraz.TabIndex = 1;
             this.PodzialTytul_obraz.TabStop = false;
@@ -155,7 +158,10 @@
             // NazwyDni_poniedziałek
             // 
             this.NazwyDni_poniedziałek.AutoSize = true;
+            this.NazwyDni_poniedziałek.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(231)))), ((int)(((byte)(151)))));
+            this.NazwyDni_poniedziałek.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NazwyDni_poniedziałek.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NazwyDni_poniedziałek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NazwyDni_poniedziałek.Location = new System.Drawing.Point(3, 0);
             this.NazwyDni_poniedziałek.Name = "NazwyDni_poniedziałek";
             this.NazwyDni_poniedziałek.Size = new System.Drawing.Size(155, 28);
@@ -166,7 +172,10 @@
             // NazwyDni_wtorek
             // 
             this.NazwyDni_wtorek.AutoSize = true;
+            this.NazwyDni_wtorek.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(231)))), ((int)(((byte)(151)))));
+            this.NazwyDni_wtorek.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NazwyDni_wtorek.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NazwyDni_wtorek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NazwyDni_wtorek.Location = new System.Drawing.Point(164, 0);
             this.NazwyDni_wtorek.Name = "NazwyDni_wtorek";
             this.NazwyDni_wtorek.Size = new System.Drawing.Size(155, 28);
@@ -177,7 +186,10 @@
             // NazwyDni_sroda
             // 
             this.NazwyDni_sroda.AutoSize = true;
+            this.NazwyDni_sroda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(231)))), ((int)(((byte)(151)))));
+            this.NazwyDni_sroda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NazwyDni_sroda.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NazwyDni_sroda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NazwyDni_sroda.Location = new System.Drawing.Point(325, 0);
             this.NazwyDni_sroda.Name = "NazwyDni_sroda";
             this.NazwyDni_sroda.Size = new System.Drawing.Size(155, 28);
@@ -188,7 +200,10 @@
             // NazwyDni_czwartek
             // 
             this.NazwyDni_czwartek.AutoSize = true;
+            this.NazwyDni_czwartek.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(231)))), ((int)(((byte)(151)))));
+            this.NazwyDni_czwartek.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NazwyDni_czwartek.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NazwyDni_czwartek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NazwyDni_czwartek.Location = new System.Drawing.Point(486, 0);
             this.NazwyDni_czwartek.Name = "NazwyDni_czwartek";
             this.NazwyDni_czwartek.Size = new System.Drawing.Size(155, 28);
@@ -199,7 +214,10 @@
             // NazwyDni_piatek
             // 
             this.NazwyDni_piatek.AutoSize = true;
+            this.NazwyDni_piatek.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(231)))), ((int)(((byte)(151)))));
+            this.NazwyDni_piatek.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NazwyDni_piatek.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NazwyDni_piatek.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NazwyDni_piatek.Location = new System.Drawing.Point(647, 0);
             this.NazwyDni_piatek.Name = "NazwyDni_piatek";
             this.NazwyDni_piatek.Size = new System.Drawing.Size(155, 28);
@@ -210,7 +228,10 @@
             // NazwyDni_sobota
             // 
             this.NazwyDni_sobota.AutoSize = true;
+            this.NazwyDni_sobota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(231)))), ((int)(((byte)(151)))));
+            this.NazwyDni_sobota.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NazwyDni_sobota.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NazwyDni_sobota.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NazwyDni_sobota.Location = new System.Drawing.Point(808, 0);
             this.NazwyDni_sobota.Name = "NazwyDni_sobota";
             this.NazwyDni_sobota.Size = new System.Drawing.Size(155, 28);
@@ -221,7 +242,10 @@
             // NazwyDni_niedziela
             // 
             this.NazwyDni_niedziela.AutoSize = true;
+            this.NazwyDni_niedziela.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(231)))), ((int)(((byte)(151)))));
+            this.NazwyDni_niedziela.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NazwyDni_niedziela.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NazwyDni_niedziela.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.NazwyDni_niedziela.Location = new System.Drawing.Point(969, 0);
             this.NazwyDni_niedziela.Name = "NazwyDni_niedziela";
             this.NazwyDni_niedziela.Size = new System.Drawing.Size(159, 28);
@@ -231,6 +255,7 @@
             // 
             // PodzialTygodni_kontrolkiDni
             // 
+            this.PodzialTygodni_kontrolkiDni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(224)))), ((int)(((byte)(184)))));
             this.PodzialTygodni_kontrolkiDni.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PodzialTygodni_kontrolkiDni.Location = new System.Drawing.Point(3, 37);
             this.PodzialTygodni_kontrolkiDni.Name = "PodzialTygodni_kontrolkiDni";
