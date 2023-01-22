@@ -23,6 +23,13 @@ namespace CalendarEX
             uchwytOknoMiesiac = this;   //przypisujemy do zmienne uchwytGLowneOkno klase GlowneOKno
         }
 
+        //FUNKCJA AKTUALIZUJACA WYDARZENIA
+        public void AktualizujWydarzenia()
+        {
+            PodzialTygodni_kontrolkiDni.Controls.Clear();
+            WyswietlKalendarz();
+        }
+
         //FUNKCJA WYKONUJACA SIE GDY OKNO JEST ZALADOWANE
         private void OknoMiesiac_Load(object sender, EventArgs e)
         {
@@ -172,13 +179,5 @@ namespace CalendarEX
             PodzialTygodni_kontrolkiDni.Controls.Clear();
             WyswietlKalendarz();
         }
-
-        //FUNKCJA AKTUALIZUJACA WYDARZENIA
-        public void AktualizujWydarzenia()
-        {
-            PodzialTygodni_kontrolkiDni.Controls.Clear();
-            WyswietlKalendarz();
-        }
-
     }
 }

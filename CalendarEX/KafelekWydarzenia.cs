@@ -14,9 +14,9 @@ using System.Data.SQLite;
 
 namespace CalendarEX
 {
-    public partial class WpisWydarzenia : UserControl //Klasa PelnyDzien dziedziczaca atrybuty i metody po klasie UserControl
+    public partial class KafelekWydarzenia : UserControl //Klasa PelnyDzien dziedziczaca atrybuty i metody po klasie UserControl
     {
-        public WpisWydarzenia() //konstruktor klasy
+        public KafelekWydarzenia() //konstruktor klasy
         {
             InitializeComponent();//zrobione przez visual
         }

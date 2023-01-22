@@ -21,7 +21,7 @@ namespace CalendarEX
 
         }
 
-        //FUNKCJA ZAPISUJACA DODANIE WPISU DO TERMINARZA
+        //FUNKCJA ZAPISUJACA DODANIE WPISU DO TERMINARZA PO KLIKNIECIU PRZYCISKU ZAPISZ
         private void Zapisz_Click(object sender, EventArgs e) //zaladowanie okna do zapisu
         {
             DodajWpisyTerminarza(); //funkcja obslugujaca dodanie wpisu do terminarza
@@ -38,7 +38,7 @@ namespace CalendarEX
             Data_miesiac.SelectedIndex = miesiac - 1; //wpisanie do pola odpowiedniego miesiaca (bo combobox liczy od 0)
         }
 
-        //FUNKCJA OBSLUGUJACA DODANIE DO BAZY DANYCH WPISU Z TERMINARA
+        //FUNKCJA OBSLUGUJACA DODANIE DO BAZY DANYCH WPISU Z TERMINARZA
         private void DodajWpisyTerminarza()
         {
             //pobrane dane do zapytania (jaka nazwa, dzien, miesiac, rok, czy wazne - wybranie przez uzytkownika opcji z comboboxa)

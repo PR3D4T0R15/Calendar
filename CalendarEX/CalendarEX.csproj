@@ -114,16 +114,16 @@
     <Compile Include="PustyDzien.Designer.cs">
       <DependentUpon>PustyDzien.cs</DependentUpon>
     </Compile>
-    <Compile Include="WpisWydarzenia.cs">
+    <Compile Include="KafelekWydarzenia.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="WpisWydarzenia.Designer.cs">
-      <DependentUpon>WpisWydarzenia.cs</DependentUpon>
+    <Compile Include="KafelekWydarzenia.Designer.cs">
+      <DependentUpon>KafelekWydarzenia.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="GlowneOkno.resx">
       <DependentUpon>GlowneOkno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
+    <EmbeddedResource Include="OknoMiesiecy.resx">
       <DependentUpon>OknoMiesiecy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OknoNotatki.resx">
@@ -151,8 +151,8 @@
     <EmbeddedResource Include="PustyDzien.resx">
       <DependentUpon>PustyDzien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WpisWydarzenia.resx">
-      <DependentUpon>WpisWydarzenia.cs</DependentUpon>
+    <EmbeddedResource Include="KafelekWydarzenia.resx">
+      <DependentUpon>KafelekWydarzenia.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="dane.sqlite" />
     <None Include="packages.config" />

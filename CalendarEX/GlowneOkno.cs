@@ -54,6 +54,7 @@ namespace CalendarEX
 
         }
 
+        //NASTĘPNY ROK
         //ZMIANA ROKU O ROK DO PRZODU
         private void PanelRoku_rokDoPrzodu_Click(object sender, EventArgs e)
         {
@@ -71,6 +72,7 @@ namespace CalendarEX
             WczytajWydarzeniaWazne();
         }
 
+        //POPRZEDNI ROK
         //ZMIANA ROKU O ROK DO TYLU
         private void PanelRoku_rokDoTylu_Click(object sender, EventArgs e)
         {
@@ -242,9 +244,9 @@ namespace CalendarEX
         private void DodajWydarzenieDoListy(int dzien, int miesiac, string nazwa)
         {
             //utworzenie napisu z wydarzeniem/utworzenie nowego wpisu (kafelka) w konkretny miesiac
-            WpisWydarzenia wydarzenie = new WpisWydarzenia(); 
+            KafelekWydarzenia wydarzenie = new KafelekWydarzenia(); 
 
-            wydarzenie.UstawTekst(dzien.ToString("00") + ": " + nazwa); //ustawienie tekstu w kafelku: [numer dnia] np. 14: walentynki
+            wydarzenie.UstawTekst(dzien.ToString("00") + "." + miesiac.ToString("00") + ": " + nazwa); //ustawienie tekstu w kafelku: [numer dnia] np. 14: walentynki
             //ustawianie nazwy wydarzenia, pobranie danych z konkretnego dnia, miesiaca, roku i ustawenie nazwy wydarzenia z tymi danymi
             wydarzenie.Name = dzien.ToString() + ":" + miesiac.ToString() + ":" + rok.ToString() + ":" + nazwa;
             wydarzenie.WylaczAkcjeKlikniecia();     //ustawienie ze wydarzenie jest nieklikalne
@@ -312,7 +314,7 @@ namespace CalendarEX
 
         }
 
-        //FUNKCJA WCZYTUJACA WYDARZENIA NADCHODZACE PODCZAS LADOWANIA PROGRAMU
+        //FUNKCJA POBIERAJACA Z BAZY DANYCH WYDARZENIA NADCHODZACE PODCZAS LADOWANIA PROGRAMU
         private void WczytajWydarzeniaNadchodzace() //TO SAMO CO DO WYDARZEN DLA MIESIACA ALE INNE ZAPYTANIE
         {
             //obiekt nowego polaczenia do bazy danych
@@ -356,7 +358,7 @@ namespace CalendarEX
             if (czyWazne == 0) //czyWazne == 0 - NIE WAZNE WIEC DODA WYDARZENIE DO POLA NADCHODZACE WYDARZENIA
             {
                 //utworzenie napisu z wydarzeniem/utworzenie nowego wpisu w pole Nadchodzace Wydarzenia
-                WpisWydarzenia wydarzenie = new WpisWydarzenia();
+                KafelekWydarzenia wydarzenie = new KafelekWydarzenia();
 
                 wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa); //ustawienie tekstu w kafelku: [numer dnia] np. 14: walentynki
                 //ustawianie nazwy wydarzenia, pobranie danych z konkretnego dnia, miesiaca, roku i ustawienie nazwy wydarzenia z tymi danymi
@@ -368,7 +370,7 @@ namespace CalendarEX
             else if (czyWazne == 1) //czyWazne == 1 - WAZNE WIEC DODA WYDARZENIE DO POLA NAJWAZNIEJSZE WYDARZENIA
             {
                 //utworzenie napisu z wydarzeniem/utworzenie nowego wpisu w pole Najwazniejsze Wydarzenia
-                WpisWydarzenia wydarzenie = new WpisWydarzenia();
+                KafelekWydarzenia wydarzenie = new KafelekWydarzenia();
 
                 wydarzenie.UstawTekst(dzien.ToString() + "." + miesiac.ToString("00") + " : " + nazwa); //ustawienie tekstu w kafelku: [numer dnia] np. 14. [numer miesiaca] np.2: walentynki
                 //ustawianie nazwy wydarzenia, pobranie danych z konkretnego dnia, miesiaca, roku i ustawienie nazwy wydarzenia z tymi danymi

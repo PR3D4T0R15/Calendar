@@ -916,6 +916,7 @@
             this.Name = "GlowneOkno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalendarEX";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.GlowneOkno_Resize);
             this.GlowneOkno_podzial.Panel1.ResumeLayout(false);

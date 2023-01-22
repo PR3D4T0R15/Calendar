@@ -37,7 +37,7 @@ namespace CalendarEX
             oknoWydarzenie.Show(); //wyswietlenie okna
         }
 
-        //FUNKCJA WCZYTUJACA WYDARZENIA DNIA
+        //FUNKCJA WCZYTUJACA WYDARZENIA DLA KONKRETNEGO DNIA
         private void WczytajWydarzeniaDnia(int wybranyDzien)
         {
             //POLACZENIE Z BAZA DANYCH
@@ -72,7 +72,7 @@ namespace CalendarEX
         private void DodajWydarzenieDoListy(string nazwa, int dzien)
         {
             //utworzenie napisu z wydarzeniem/utworzenie nowego wpisu (kafelka) w konkretny miesiac
-            WpisWydarzenia wydarzenie = new WpisWydarzenia();
+            KafelekWydarzenia wydarzenie = new KafelekWydarzenia();
 
             wydarzenie.UstawTekst(nazwa);//ustawienie tekstu tego wydarzenia
             //utworzenie nazwy tego wydarzenia

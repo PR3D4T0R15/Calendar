@@ -32,7 +32,6 @@
             this.OknoMiesiac_Podzial = new System.Windows.Forms.SplitContainer();
             this.PodzialTytul = new System.Windows.Forms.TableLayoutPanel();
             this.PodzialTytul_tekst = new System.Windows.Forms.Label();
-            this.PodzialTytul_obraz = new System.Windows.Forms.PictureBox();
             this.PodzialTygodni = new System.Windows.Forms.TableLayoutPanel();
             this.PodzialTygodni_NazwyDni = new System.Windows.Forms.TableLayoutPanel();
             this.NazwyDni_poniedziałek = new System.Windows.Forms.Label();
@@ -43,14 +42,15 @@
             this.NazwyDni_sobota = new System.Windows.Forms.Label();
             this.NazwyDni_niedziela = new System.Windows.Forms.Label();
             this.PodzialTygodni_kontrolkiDni = new System.Windows.Forms.FlowLayoutPanel();
+            this.PodzialTytul_obraz = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.OknoMiesiac_Podzial)).BeginInit();
             this.OknoMiesiac_Podzial.Panel1.SuspendLayout();
             this.OknoMiesiac_Podzial.Panel2.SuspendLayout();
             this.OknoMiesiac_Podzial.SuspendLayout();
             this.PodzialTytul.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PodzialTytul_obraz)).BeginInit();
             this.PodzialTygodni.SuspendLayout();
             this.PodzialTygodni_NazwyDni.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PodzialTytul_obraz)).BeginInit();
             this.SuspendLayout();
             // 
             // OknoMiesiac_Podzial
@@ -101,18 +101,6 @@
             this.PodzialTytul_tekst.TabIndex = 0;
             this.PodzialTytul_tekst.Text = "MIESIĄC";
             this.PodzialTytul_tekst.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // PodzialTytul_obraz
-            // 
-            this.PodzialTytul_obraz.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PodzialTytul_obraz.Image = global::CalendarEX.img.styczen;
-            this.PodzialTytul_obraz.InitialImage = global::CalendarEX.img.styczen;
-            this.PodzialTytul_obraz.Location = new System.Drawing.Point(628, 6);
-            this.PodzialTytul_obraz.Name = "PodzialTytul_obraz";
-            this.PodzialTytul_obraz.Size = new System.Drawing.Size(50, 32);
-            this.PodzialTytul_obraz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PodzialTytul_obraz.TabIndex = 1;
-            this.PodzialTytul_obraz.TabStop = false;
             // 
             // PodzialTygodni
             // 
@@ -262,6 +250,18 @@
             this.PodzialTygodni_kontrolkiDni.Size = new System.Drawing.Size(1131, 653);
             this.PodzialTygodni_kontrolkiDni.TabIndex = 1;
             // 
+            // PodzialTytul_obraz
+            // 
+            this.PodzialTytul_obraz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PodzialTytul_obraz.Image = global::CalendarEX.img.styczen;
+            this.PodzialTytul_obraz.InitialImage = global::CalendarEX.img.styczen;
+            this.PodzialTytul_obraz.Location = new System.Drawing.Point(628, 6);
+            this.PodzialTytul_obraz.Name = "PodzialTytul_obraz";
+            this.PodzialTytul_obraz.Size = new System.Drawing.Size(50, 32);
+            this.PodzialTytul_obraz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PodzialTytul_obraz.TabIndex = 1;
+            this.PodzialTytul_obraz.TabStop = false;
+            // 
             // OknoMiesiac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -279,10 +279,10 @@
             this.OknoMiesiac_Podzial.ResumeLayout(false);
             this.PodzialTytul.ResumeLayout(false);
             this.PodzialTytul.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PodzialTytul_obraz)).EndInit();
             this.PodzialTygodni.ResumeLayout(false);
             this.PodzialTygodni_NazwyDni.ResumeLayout(false);
             this.PodzialTygodni_NazwyDni.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PodzialTytul_obraz)).EndInit();
             this.ResumeLayout(false);
 
         }

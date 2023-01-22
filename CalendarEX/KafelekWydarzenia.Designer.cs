@@ -1,6 +1,6 @@
 ﻿namespace CalendarEX
 {
-    partial class WpisWydarzenia
+    partial class KafelekWydarzenia
     {
         /// <summary> 
         /// Wymagana zmienna projektanta.
