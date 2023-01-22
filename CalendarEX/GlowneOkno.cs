@@ -244,7 +244,7 @@ namespace CalendarEX
             //utworzenie napisu z wydarzeniem/utworzenie nowego wpisu (kafelka) w konkretny miesiac
             WpisWydarzenia wydarzenie = new WpisWydarzenia(); 
 
-            wydarzenie.UstawTekst(dzien.ToString() + ": " + nazwa); //ustawienie tekstu w kafelku: [numer dnia] np. 14: walentynki
+            wydarzenie.UstawTekst(dzien.ToString("00") + ": " + nazwa); //ustawienie tekstu w kafelku: [numer dnia] np. 14: walentynki
             //ustawianie nazwy wydarzenia, pobranie danych z konkretnego dnia, miesiaca, roku i ustawenie nazwy wydarzenia z tymi danymi
             wydarzenie.Name = dzien.ToString() + ":" + miesiac.ToString() + ":" + rok.ToString() + ":" + nazwa;
             wydarzenie.WylaczAkcjeKlikniecia();     //ustawienie ze wydarzenie jest nieklikalne
@@ -370,7 +370,7 @@ namespace CalendarEX
                 //utworzenie napisu z wydarzeniem/utworzenie nowego wpisu w pole Najwazniejsze Wydarzenia
                 WpisWydarzenia wydarzenie = new WpisWydarzenia();
 
-                wydarzenie.UstawTekst(dzien.ToString() + "." + miesiac.ToString() + " : " + nazwa); //ustawienie tekstu w kafelku: [numer dnia] np. 14. [numer miesiaca] np.2: walentynki
+                wydarzenie.UstawTekst(dzien.ToString() + "." + miesiac.ToString("00") + " : " + nazwa); //ustawienie tekstu w kafelku: [numer dnia] np. 14. [numer miesiaca] np.2: walentynki
                 //ustawianie nazwy wydarzenia, pobranie danych z konkretnego dnia, miesiaca, roku i ustawienie nazwy wydarzenia z tymi danymi
                 wydarzenie.Name = dzien.ToString() + ":" + GlowneOkno.miesiac.ToString() + ":" + GlowneOkno.rok.ToString() + ":" + nazwa;
                 wydarzenie.Width = Najwazniejsze_lista.Width - 6; //ustawienie szerokosci pola (-6 pikseli)
